@@ -1,0 +1,1453 @@
+﻿<CAEXFile SchemaVersion="3.0" FileName="SelfX.aml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.dke.de/CAEX" xsi:schemaLocation="http://www.dke.de/CAEX CAEX_ClassModel_V.3.0.xsd">
+  <SuperiorStandardVersion>AutomationML 2.10</SuperiorStandardVersion>
+  <SourceDocumentInformation OriginName="AutomationML Editor" OriginID="916578CA-FE0D-474E-A4FC-9E1719892369" OriginVersion="5.6.10.0" LastWritingDateTime="2023-04-17T11:04:09.7733519+02:00" OriginProjectID="unspecified" OriginProjectTitle="unspecified" OriginRelease="5.6.10.0" OriginVendor="AutomationML e.V." OriginVendorURL="www.AutomationML.org" />
+  <InstanceHierarchy Name="InstanceHierarchy">
+    <Version>0</Version>
+    <InternalElement Name="SelfX Material Flow" ID="a518397b-e9ad-4faf-af14-262299eb4f20">
+      <InternalElement Name="Technical Resource" ID="3b14b399-fc07-46d3-8d10-1aab403b1144">
+        <InternalElement Name="Row A" ID="e3d83ed0-788d-4b3a-b37b-c66efb64fb40" RefBaseSystemUnitPath="SystemUnitClassLib/Row">
+          <InternalElement Name="Transposer A01" ID="2d55b566-8a0a-4cd1-b40d-7f27444e9bbf" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Transposer">
+            <ExternalInterface Name="Product_IN" ID="e7b5be13-abe7-44eb-a105-ca10b0047e05" />
+            <ExternalInterface Name="Product_OUT" ID="6770a3b6-2012-40d6-89e1-cdd0afbe199d" />
+            <InternalElement Name="LSU A01.1" ID="ca1cd5eb-82fd-49ef-9aeb-85b23e0db490" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Transposer/LSU">
+              <Attribute Name="SensorState" AttributeDataType="xs:string" />
+              <ExternalInterface Name="indicatesProductProperties_OUT" ID="0c814674-3c3b-4de4-b081-07a13796bcac" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="LSU A01.2" ID="3e40a7c5-e69d-40f1-9ba0-a584343eb0f7" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Transposer/LSU">
+              <Attribute Name="SensorState" AttributeDataType="xs:string" />
+              <ExternalInterface Name="indicatesProductProperties_OUT" ID="bb923588-b5a0-42e4-a713-299527b82396" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="LSU A01.3" ID="d7d5805f-44bd-45ea-ae53-e607550a5529" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Transposer/LSU">
+              <Attribute Name="SensorState" AttributeDataType="xs:string" />
+              <ExternalInterface Name="indicatesProductProperties_OUT" ID="802a157f-8f69-4f76-a7ef-03bf469750a5" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="LSU A01.4" ID="9dc2d9fe-a8af-40aa-836e-f670841ae8db" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Transposer/LSU">
+              <Attribute Name="SensorState" AttributeDataType="xs:string" />
+              <ExternalInterface Name="indicatesProductProperties_OUT" ID="47136ec5-1b45-46dc-8958-a33c4badab22" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="UMS A01" ID="69f97d3e-4d41-4e1a-a13d-ea27c9301d03" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Transposer/UMS">
+              <Attribute Name="ActorState" AttributeDataType="xs:string" />
+              <ExternalInterface Name="Electricity_IN" ID="77da5405-e9bb-4165-8597-572c010c4490" />
+              <ExternalInterface Name="indicatesHWstate_IN" ID="536ba383-688e-45b8-9cfd-50f59af94a57" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="SEG A01" ID="8fb189a0-e91f-4519-b153-d778e71123db">
+              <ExternalInterface Name="Pneumatic_IN" ID="0a6febcc-5744-4928-a1e9-b18cda8ad927" />
+              <ExternalInterface Name="ForceFlow_IN" ID="e9b177c7-96a1-4ad6-8077-38319c00e1d8" />
+              <ExternalInterface Name="indicatesHWstate_IN" ID="f77463eb-9429-4497-810d-0e8211973da0" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="Technical Resource/Equipment Module" />
+          </InternalElement>
+          <InternalElement Name="Roll Module A02" ID="9c9dd464-3e63-4ccc-b62a-92891201c029" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module">
+            <ExternalInterface Name="Product_IN" ID="082837f4-0a80-4beb-b878-579e0f326509" />
+            <ExternalInterface Name="Product_OUT" ID="6f30aa2c-c674-48e1-88ea-0abad4b7b2a7" />
+            <InternalElement Name="SEG A02" ID="d2dfca7a-e412-4def-9fbe-b69c7e44bd1e" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module/SEG">
+              <Attribute Name="ActorState" AttributeDataType="xs:string" />
+              <Attribute Name="ActorState1" AttributeDataType="xs:string" />
+              <ExternalInterface Name="Pneumatic_IN" ID="5957149d-5b24-4a0a-8340-92eb2b139961" />
+              <ExternalInterface Name="ForceFlow_IN" ID="6653fa90-b952-4931-836b-78b1e91f58c4" />
+              <ExternalInterface Name="indicatesHWstate_IN" ID="7da7c3b3-b305-482f-968b-e6d5fa970761" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="LSU A02" ID="62d24d99-8b31-481a-afc2-356b4029b7b6" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module/LSU">
+              <Attribute Name="SensorState" AttributeDataType="xs:string" />
+              <Attribute Name="SensorState1" AttributeDataType="xs:string" />
+              <ExternalInterface Name="indicatesProductProperties_OUT" ID="35e98d2f-b78b-4ba8-8faa-0eccb5a184b7" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="Technical Resource/Equipment Module" />
+          </InternalElement>
+          <InternalElement Name="Roll Module A03" ID="053e06f3-0c57-4274-865e-0e065584d6c9" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module">
+            <ExternalInterface Name="Product_IN" ID="757e0eb2-28be-40ff-a58e-6d6f52f9fba6" />
+            <ExternalInterface Name="Product_OUT" ID="d15a4a18-2cc3-41c1-b972-fdab7cc3127e" />
+            <InternalElement Name="SEG A03" ID="d20eef3e-85c1-4e26-ac7a-bf798583df7b" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module/SEG">
+              <Attribute Name="ActorState" AttributeDataType="xs:string" />
+              <Attribute Name="ActorState1" AttributeDataType="xs:string" />
+              <ExternalInterface Name="Pneumatic_IN" ID="7b6253b9-3481-4166-a1dd-4391c022ef08" />
+              <ExternalInterface Name="ForceFlow_IN" ID="fff8152c-342d-4f50-902d-a36a0e792b66" />
+              <ExternalInterface Name="indicatesHWstate_IN" ID="48f14916-fc46-431e-ad95-ca34fd6d8c7f" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="LSU A03" ID="c957795a-b160-458a-a6aa-531f9c4509b4" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module/LSU">
+              <Attribute Name="SensorState" AttributeDataType="xs:string" />
+              <ExternalInterface Name="indicatesProductProperties_OUT" ID="b2f40248-35c4-4118-a598-c9e20af5dca6" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="Technical Resource/Equipment Module" />
+          </InternalElement>
+          <InternalElement Name="Roll Module A04" ID="50078dfe-f2d5-491b-ad20-0c898aa32eab" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module">
+            <ExternalInterface Name="Product_IN" ID="0194409f-c3e3-48e5-ba89-3521627a4e47" />
+            <ExternalInterface Name="Product_OUT" ID="b5bae41a-39e3-4fe1-a5b4-14642c2d9986" />
+            <InternalElement Name="SEG A04" ID="93c7af55-a2bf-4bac-9549-54e94e97df61" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module/SEG">
+              <Attribute Name="ActorState" AttributeDataType="xs:string" />
+              <Attribute Name="ActorState1" AttributeDataType="xs:string" />
+              <ExternalInterface Name="Pneumatic_IN" ID="b880183b-180d-4043-b3af-c2579cbe0176" />
+              <ExternalInterface Name="ForceFlow_IN" ID="7dfeb9dc-b1ef-4732-a618-7739933fabbb" />
+              <ExternalInterface Name="indicatesHWstate_IN" ID="4bba82cd-3f67-43d4-8b0f-a5bc576da705" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="LSU A04" ID="05017c39-6ac8-4459-bd9c-4b30fa685cd6" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module/LSU">
+              <Attribute Name="SensorState" AttributeDataType="xs:string" />
+              <Attribute Name="SensorState1" AttributeDataType="xs:string" />
+              <ExternalInterface Name="indicatesProductProperties_OUT" ID="e27dfc2f-54d4-474e-897d-0994fc5cad59" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="Technical Resource/Equipment Module" />
+          </InternalElement>
+          <InternalElement Name="Roll Module A05" ID="88138fbe-595a-4ead-844b-6e10eea12a78" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module">
+            <ExternalInterface Name="Product_IN" ID="dec2b243-38a6-4e98-81fc-47ed659b4e7a" />
+            <ExternalInterface Name="Product_OUT" ID="137d1152-0bfa-45c8-8bc7-7c7bde48cffb" />
+            <InternalElement Name="SEG A05" ID="9f12487f-29c4-4929-8158-2edba7c4d43a" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module/SEG">
+              <Attribute Name="ActorState" AttributeDataType="xs:string" />
+              <Attribute Name="ActorState1" AttributeDataType="xs:string" />
+              <ExternalInterface Name="Pneumatic_IN" ID="ce7d42b0-f053-49e5-a3da-5f12d447d25f" />
+              <ExternalInterface Name="ForceFlow_IN" ID="24f98a51-f252-4f6b-a42e-710fce885e0a" />
+              <ExternalInterface Name="indicatesHWstate_IN" ID="d28becbf-f79e-4c96-aebe-1477578c83d4" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="LSU A05" ID="e69f9b0c-bf5d-406a-b5f7-bb3159822834" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module/LSU">
+              <Attribute Name="SensorState" AttributeDataType="xs:string" />
+              <Attribute Name="SensorState1" AttributeDataType="xs:string" />
+              <ExternalInterface Name="indicatesProductProperties_OUT" ID="2d924b75-19e5-412d-a4f1-2831f26775cb" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="Technical Resource/Equipment Module" />
+          </InternalElement>
+          <InternalElement Name="Roll Module A06" ID="453b9eaa-3da2-430d-bfb9-36042129d441" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module">
+            <ExternalInterface Name="Product_IN" ID="6c4a382a-ae4f-41a1-80de-2b01feae7370" />
+            <ExternalInterface Name="Product_OUT" ID="3fc6bcd1-053e-45b3-a1ca-d1b2e3af1057" />
+            <InternalElement Name="SEG A06" ID="7634edbd-918a-4c94-8015-4e9d5f73c04c" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module/SEG">
+              <Attribute Name="ActorState" AttributeDataType="xs:string" />
+              <Attribute Name="ActorState1" AttributeDataType="xs:string" />
+              <ExternalInterface Name="Pneumatic_IN" ID="17b90778-b7e8-4cfd-b925-649523aa9c9a" />
+              <ExternalInterface Name="ForceFlow_IN" ID="e66230eb-e8a1-47ac-9863-2f93a3151a21" />
+              <ExternalInterface Name="indicatesHWstate_IN" ID="fc23524a-ffe6-47bc-9d53-7f8d2582e54a" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="LSU A06" ID="822922ee-69c1-4a1f-b65e-e0ee7afa2a18" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module/LSU">
+              <Attribute Name="SensorState" AttributeDataType="xs:string" />
+              <Attribute Name="SensorState1" AttributeDataType="xs:string" />
+              <ExternalInterface Name="indicatesProductProperties_OUT" ID="e3537637-df10-46be-a77a-60103bce655a" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="Technical Resource/Equipment Module" />
+          </InternalElement>
+          <InternalElement Name="Roll Module A07" ID="f4a23706-2943-4a2b-a1e5-7d03a4a7b6b7" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module">
+            <ExternalInterface Name="Product_IN" ID="57730feb-9387-49f2-b240-006ef088057e" />
+            <ExternalInterface Name="Product_OUT" ID="553ec3b6-04df-478e-ad5b-e2ee4d9ca8ff" />
+            <InternalElement Name="SEG A07" ID="bed1dd56-5d33-4e23-b628-64e286828dc4" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module/SEG">
+              <Attribute Name="ActorState" AttributeDataType="xs:string" />
+              <Attribute Name="ActorState1" AttributeDataType="xs:string" />
+              <ExternalInterface Name="Pneumatic_IN" ID="24eca074-203e-402b-9eab-2bc4bb36b4a8" />
+              <ExternalInterface Name="ForceFlow_IN" ID="f84755e6-da10-43a1-a989-90d9dbd08576" />
+              <ExternalInterface Name="indicatesHWstate_IN" ID="f7d2bb87-d1db-49f7-89e8-b5f434f49ff0" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="LSU A07" ID="a2a25c8e-2110-4f71-8a4a-20a268785750" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module/LSU">
+              <Attribute Name="SensorState" AttributeDataType="xs:string" />
+              <Attribute Name="SensorState1" AttributeDataType="xs:string" />
+              <ExternalInterface Name="indicatesProductProperties_OUT" ID="8af1b680-945e-44ac-85a6-68ca34326a26" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="Technical Resource/Equipment Module" />
+          </InternalElement>
+          <InternalElement Name="Roll Module A08" ID="e2986bbe-23b6-4c04-b308-3f6360f616d8" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module">
+            <ExternalInterface Name="Product_IN" ID="a0286bcf-02b0-4677-9976-335adc02e1cf" />
+            <ExternalInterface Name="Product_OUT" ID="8652606c-ce8f-42fd-90a7-99bed9b3b1b9" />
+            <InternalElement Name="SEG A08" ID="e74ff307-a8a8-4665-b860-9c30674c9350" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module/SEG">
+              <Attribute Name="ActorState" AttributeDataType="xs:string" />
+              <Attribute Name="ActorState1" AttributeDataType="xs:string" />
+              <ExternalInterface Name="Pneumatic_IN" ID="1dd7f9a3-7d81-4e5b-9f75-742f801a2c1e" />
+              <ExternalInterface Name="ForceFlow_IN" ID="4f100e49-f61a-49f2-a51e-1328c6cd72f6" />
+              <ExternalInterface Name="indicatesHWstate_IN" ID="0aa0d768-c0e4-41a6-abb9-fc3bc6dc918d" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="LSU A08" ID="b97bf387-87ba-4f2e-9758-2f24350fb1f3" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module/LSU">
+              <Attribute Name="SensorState" AttributeDataType="xs:string" />
+              <Attribute Name="SensorState1" AttributeDataType="xs:string" />
+              <ExternalInterface Name="indicatesProductProperties_OUT" ID="38c81e28-a92e-4116-90fc-699b45d4a492" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="Technical Resource/Equipment Module" />
+          </InternalElement>
+          <InternalElement Name="Roll Module A09" ID="bf513550-5783-4450-bd8d-e2400580d3d9" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module">
+            <ExternalInterface Name="Product_IN" ID="b4e1882f-53e0-482f-932f-e6604f94f940" />
+            <ExternalInterface Name="Product_OUT" ID="21c4f5f3-f5cf-425e-b68b-ab8e74cacd45" />
+            <InternalElement Name="SEG A09" ID="adc8e1b3-87fd-4b6e-9c74-4a7e09e6fe62" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module/SEG">
+              <Attribute Name="ActorState" AttributeDataType="xs:string" />
+              <ExternalInterface Name="Pneumatic_IN" ID="32cdfe19-426f-43ab-a9e9-a92a58a35218" />
+              <ExternalInterface Name="ForceFlow_IN" ID="48f7e20e-3dfc-487d-a210-0404fce35ef4" />
+              <ExternalInterface Name="indicatesHWstate_IN" ID="7f882883-0426-49a9-a323-b29eaf4622fd" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="LSU A09" ID="9c07cea1-012b-4432-bdd2-466d2d988ef4" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module/LSU">
+              <Attribute Name="SensorState" AttributeDataType="xs:string" />
+              <ExternalInterface Name="indicatesProductProperties_OUT" ID="1c3c73af-1258-4150-a9cb-73c3822d09b8" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="Technical Resource/Equipment Module" />
+          </InternalElement>
+          <InternalElement Name="Roll Module A10" ID="dc56bc86-8c62-432d-ae78-92f9f329a6db" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module">
+            <ExternalInterface Name="Product_IN" ID="577f579f-9387-42ce-9c40-df2983982d3b" />
+            <ExternalInterface Name="Product_OUT" ID="0822a6d0-595a-406e-a3c3-2812e0dfd13f" />
+            <InternalElement Name="SEG A10" ID="5371cffb-cdd0-421d-ad71-b5129a5d602d" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module/SEG">
+              <Attribute Name="ActorState" AttributeDataType="xs:string" />
+              <ExternalInterface Name="Pneumatic_IN" ID="f0e2cc30-bb54-4c3c-8490-3f2ca093f2f5" />
+              <ExternalInterface Name="ForceFlow_IN" ID="5096b675-6324-4587-83f0-fa7e35ca0309" />
+              <ExternalInterface Name="indicatesHWstate_IN" ID="6c6b396c-87b0-4dc6-953e-6c08a40e758c" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="LSU A10" ID="c46a32b3-e2c4-4d12-b6f1-967fcd40152b" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module/LSU">
+              <Attribute Name="SensorState" AttributeDataType="xs:string" />
+              <ExternalInterface Name="indicatesProductProperties_OUT" ID="8b1f49ac-66a4-4c65-bbd6-766002a026cd" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="LMP A10.1" ID="bf09aed7-ada5-4978-bea2-d494c480e5c3" RefBaseSystemUnitPath="SystemUnitClassLib/Lamps/LMP">
+              <Attribute Name="ActorState" AttributeDataType="xs:string" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="LMP A10.2" ID="317f09f1-7ca3-4d97-be74-aea9b46b61b9" RefBaseSystemUnitPath="SystemUnitClassLib/Lamps/LMP">
+              <Attribute Name="ActorState" AttributeDataType="xs:string" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="LMP A10.3" ID="7b1b0bb4-4460-4354-9077-0f6456327e26" RefBaseSystemUnitPath="SystemUnitClassLib/Lamps/LMP">
+              <Attribute Name="ActorState" AttributeDataType="xs:string" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="Technical Resource/Equipment Module" />
+          </InternalElement>
+          <InternalElement Name="Roll Module A11" ID="d9f902a3-d85b-467e-ab3e-8455288f0aae" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module">
+            <ExternalInterface Name="Product_IN" ID="d1e2503f-7ffc-4bca-bf9d-829a9ced6471" />
+            <ExternalInterface Name="Product_OUT" ID="50d961d6-849b-4f73-9c05-4e7bf02db4d3" />
+            <InternalElement Name="SEG A11" ID="9fd9ffa3-f866-49b5-bb31-3fb6d8a50d6d" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module/SEG">
+              <Attribute Name="ActorState" AttributeDataType="xs:string" />
+              <ExternalInterface Name="Pneumatic_IN" ID="8e9aaf78-9aa3-4f0f-a21f-5396c926e41a" />
+              <ExternalInterface Name="ForceFlow_IN" ID="349a48cf-d3f9-4505-a14e-8379a7d6b11c" />
+              <ExternalInterface Name="indicatesHWstate_IN" ID="052ab74c-8e88-49a4-97ba-88d91b02f909" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="LSU A11" ID="533002bf-b532-4528-b4c2-6318a3bd90be" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module/LSU">
+              <Attribute Name="SensorState" AttributeDataType="xs:string" />
+              <ExternalInterface Name="indicatesProductProperties_OUT" ID="410729f6-1ea6-401a-9dec-51c6b49e436e" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="STO A11" ID="b2d2bb0e-967b-43d0-bbbf-c855d3031092" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module/Stopper">
+              <Attribute Name="ActorState" AttributeDataType="xs:string" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="Technical Resource/Equipment Module" />
+          </InternalElement>
+          <InternalElement Name="Roll Module A12" ID="a5083f06-4093-4099-864e-16914e8ba00f" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module">
+            <ExternalInterface Name="Product_IN" ID="e516b1e7-0c6a-45a6-a2bc-237b253f7844" />
+            <ExternalInterface Name="Product_OUT" ID="8e267609-ebff-4872-98fd-6ce7096722ee" />
+            <InternalElement Name="SEG A12" ID="1b4f9b11-0df3-4a81-92f2-f74c9986906a" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module/SEG">
+              <Attribute Name="ActorState" AttributeDataType="xs:string" />
+              <ExternalInterface Name="Pneumatic_IN" ID="8f0f3fa5-d0fc-43eb-8881-8495730fcce2" />
+              <ExternalInterface Name="ForceFlow_IN" ID="d1223464-8c53-4f2e-b7f4-646e3c75b730" />
+              <ExternalInterface Name="indicatesHWstate_IN" ID="0ebc1b71-8395-4f80-8811-b874fe8e0bab" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="LSU A12" ID="beaeed36-7df0-4bcb-a8c0-9b4becd55a9d" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module/LSU">
+              <Attribute Name="SensorState" AttributeDataType="xs:string" />
+              <ExternalInterface Name="indicatesProductProperties_OUT" ID="d3aca3a1-1635-45e0-9b7e-42bed1b392a2" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="Technical Resource/Equipment Module" />
+          </InternalElement>
+          <InternalElement Name="Roll Module A13" ID="76d36ff0-e94b-4a26-ae05-7dbe665f9df7" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module">
+            <ExternalInterface Name="Product_IN" ID="21ee9927-c780-47fc-bc6b-22b7256f61a4" />
+            <ExternalInterface Name="Product_OUT" ID="b738b6c2-a543-4682-bc46-288c1924e87a" />
+            <InternalElement Name="SEG A13" ID="47955139-cc1a-4750-b382-6f3bc5e36cae" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module/SEG">
+              <Attribute Name="ActorState" AttributeDataType="xs:string" />
+              <ExternalInterface Name="Pneumatic_IN" ID="2a7970b0-0462-4767-bf7a-50590b6f02d5" />
+              <ExternalInterface Name="ForceFlow_IN" ID="6bbef7fc-a4cd-4551-a1f4-f0e870dc14be" />
+              <ExternalInterface Name="indicatesHWstate_IN" ID="724b3412-87d1-4269-ba19-8499d290bd9e" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="LSU A13" ID="c78e7402-5011-4d57-aae9-025584e83c7b" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module/LSU">
+              <Attribute Name="SensorState" AttributeDataType="xs:string" />
+              <ExternalInterface Name="indicatesProductProperties_OUT" ID="33ac6f38-4fb4-467e-b08e-d074f55a717c" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="Technical Resource/Equipment Module" />
+          </InternalElement>
+          <InternalElement Name="Transposer A14" ID="c47d7185-fc7e-4373-83ce-176dce72e151" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Transposer">
+            <ExternalInterface Name="Product_IN" ID="56a787fe-f30f-4640-b9cd-55cc30757059" />
+            <ExternalInterface Name="Product_OUT" ID="89219ed4-6116-42f5-b5c2-d23b10ed3779" />
+            <InternalElement Name="UMS A14" ID="c9333c25-0dfe-4837-a487-33f880a57c71" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Transposer/UMS">
+              <Attribute Name="ActorState" AttributeDataType="xs:string" />
+              <ExternalInterface Name="Electricity_IN" ID="a482c230-9e9c-45d4-bbc6-c083f71423ab" />
+              <ExternalInterface Name="indicatesHWstate_IN" ID="d37c7283-55a5-42cb-8e4d-292cfdb622c7" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="SEG A14" ID="7c69d91b-46fa-4120-9002-86f0dbe44922">
+              <ExternalInterface Name="ForceFlow_IN" ID="e997ca89-d3d3-4d70-beac-822cedb535b6" />
+              <ExternalInterface Name="Pneumatic_IN" ID="0dcb7a12-d06e-42cb-ab31-351a5981ecb2" />
+              <ExternalInterface Name="indicatesHWstate_IN" ID="e5936a0e-4a80-4975-ac01-4d30124a1ffb" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="STO A14" ID="86334bf3-bc9d-4816-80e3-f62f2d1699a6" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Transposer/Stopper">
+              <Attribute Name="ActorState" AttributeDataType="xs:string" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="LSH BA" ID="b303d773-9e6e-44cb-afc2-67e4ef63b80b" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Transposer/LSH">
+              <Attribute Name="SensorState" AttributeDataType="xs:string" />
+              <ExternalInterface Name="indicatesProductProperties_OUT" ID="95816fe9-8935-49e1-a03e-68397adb8a1c" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="Technical Resource/Equipment Module" />
+          </InternalElement>
+          <InternalElement Name="Belt A" ID="6c7f8653-9b41-4c04-b90b-0881cbfe3cf4">
+            <ExternalInterface Name="ForceFlow_IN" ID="86685eb2-b4f4-46ed-a425-75c8278f48c1" />
+            <ExternalInterface Name="ForceFlow_OUT" ID="feef9519-322d-4a8c-8fe5-a46d4b08c222" />
+            <RoleRequirements RefBaseRoleClassPath="Technical Resource/Equipment Module" />
+          </InternalElement>
+          <InternalElement Name="Drive A" ID="45252d4e-6e86-419e-a439-f753acc30675">
+            <ExternalInterface Name="Electricity_IN" ID="f4d906b9-8fca-4eca-b1da-5812702f7e3b" />
+            <ExternalInterface Name="ForceFlow_OUT" ID="551680b6-a383-4611-957a-e73a22bf4614" />
+            <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+          </InternalElement>
+          <InternalLink RefPartnerSideA="6770a3b6-2012-40d6-89e1-cdd0afbe199d" RefPartnerSideB="082837f4-0a80-4beb-b878-579e0f326509" Name="Link" />
+          <InternalLink RefPartnerSideA="6f30aa2c-c674-48e1-88ea-0abad4b7b2a7" RefPartnerSideB="757e0eb2-28be-40ff-a58e-6d6f52f9fba6" Name="InternalLink" />
+          <InternalLink RefPartnerSideA="b5bae41a-39e3-4fe1-a5b4-14642c2d9986" RefPartnerSideB="dec2b243-38a6-4e98-81fc-47ed659b4e7a" Name="InternalLink1" />
+          <InternalLink RefPartnerSideA="d15a4a18-2cc3-41c1-b972-fdab7cc3127e" RefPartnerSideB="0194409f-c3e3-48e5-ba89-3521627a4e47" Name="InternalLink2" />
+          <InternalLink RefPartnerSideA="137d1152-0bfa-45c8-8bc7-7c7bde48cffb" RefPartnerSideB="6c4a382a-ae4f-41a1-80de-2b01feae7370" Name="InternalLink3" />
+          <InternalLink RefPartnerSideA="3fc6bcd1-053e-45b3-a1ca-d1b2e3af1057" RefPartnerSideB="57730feb-9387-49f2-b240-006ef088057e" Name="InternalLink4" />
+          <InternalLink RefPartnerSideA="553ec3b6-04df-478e-ad5b-e2ee4d9ca8ff" RefPartnerSideB="a0286bcf-02b0-4677-9976-335adc02e1cf" Name="InternalLink5" />
+          <InternalLink RefPartnerSideA="8652606c-ce8f-42fd-90a7-99bed9b3b1b9" RefPartnerSideB="b4e1882f-53e0-482f-932f-e6604f94f940" Name="InternalLink6" />
+          <InternalLink RefPartnerSideA="21c4f5f3-f5cf-425e-b68b-ab8e74cacd45" RefPartnerSideB="577f579f-9387-42ce-9c40-df2983982d3b" Name="InternalLink7" />
+          <InternalLink RefPartnerSideA="0822a6d0-595a-406e-a3c3-2812e0dfd13f" RefPartnerSideB="d1e2503f-7ffc-4bca-bf9d-829a9ced6471" Name="InternalLink8" />
+          <InternalLink RefPartnerSideA="50d961d6-849b-4f73-9c05-4e7bf02db4d3" RefPartnerSideB="e516b1e7-0c6a-45a6-a2bc-237b253f7844" Name="InternalLink9" />
+          <InternalLink RefPartnerSideA="8e267609-ebff-4872-98fd-6ce7096722ee" RefPartnerSideB="21ee9927-c780-47fc-bc6b-22b7256f61a4" Name="InternalLink10" />
+          <InternalLink RefPartnerSideA="b738b6c2-a543-4682-bc46-288c1924e87a" RefPartnerSideB="56a787fe-f30f-4640-b9cd-55cc30757059" Name="InternalLink11" />
+          <InternalLink RefPartnerSideA="551680b6-a383-4611-957a-e73a22bf4614" RefPartnerSideB="86685eb2-b4f4-46ed-a425-75c8278f48c1" Name="Link1" />
+          <InternalLink RefPartnerSideA="feef9519-322d-4a8c-8fe5-a46d4b08c222" RefPartnerSideB="e9b177c7-96a1-4ad6-8077-38319c00e1d8" Name="InternalLink12" />
+          <InternalLink RefPartnerSideA="feef9519-322d-4a8c-8fe5-a46d4b08c222" RefPartnerSideB="6653fa90-b952-4931-836b-78b1e91f58c4" Name="InternalLink13" />
+          <InternalLink RefPartnerSideA="feef9519-322d-4a8c-8fe5-a46d4b08c222" RefPartnerSideB="fff8152c-342d-4f50-902d-a36a0e792b66" Name="InternalLink14" />
+          <InternalLink RefPartnerSideA="feef9519-322d-4a8c-8fe5-a46d4b08c222" RefPartnerSideB="7dfeb9dc-b1ef-4732-a618-7739933fabbb" Name="InternalLink15" />
+          <InternalLink RefPartnerSideA="feef9519-322d-4a8c-8fe5-a46d4b08c222" RefPartnerSideB="24f98a51-f252-4f6b-a42e-710fce885e0a" Name="InternalLink16" />
+          <InternalLink RefPartnerSideA="feef9519-322d-4a8c-8fe5-a46d4b08c222" RefPartnerSideB="e66230eb-e8a1-47ac-9863-2f93a3151a21" Name="InternalLink17" />
+          <InternalLink RefPartnerSideA="feef9519-322d-4a8c-8fe5-a46d4b08c222" RefPartnerSideB="f84755e6-da10-43a1-a989-90d9dbd08576" Name="InternalLink18" />
+          <InternalLink RefPartnerSideA="feef9519-322d-4a8c-8fe5-a46d4b08c222" RefPartnerSideB="4f100e49-f61a-49f2-a51e-1328c6cd72f6" Name="InternalLink19" />
+          <InternalLink RefPartnerSideA="feef9519-322d-4a8c-8fe5-a46d4b08c222" RefPartnerSideB="48f7e20e-3dfc-487d-a210-0404fce35ef4" Name="InternalLink20" />
+          <InternalLink RefPartnerSideA="feef9519-322d-4a8c-8fe5-a46d4b08c222" RefPartnerSideB="5096b675-6324-4587-83f0-fa7e35ca0309" Name="InternalLink21" />
+          <InternalLink RefPartnerSideA="feef9519-322d-4a8c-8fe5-a46d4b08c222" RefPartnerSideB="349a48cf-d3f9-4505-a14e-8379a7d6b11c" Name="InternalLink22" />
+          <InternalLink RefPartnerSideA="feef9519-322d-4a8c-8fe5-a46d4b08c222" RefPartnerSideB="d1223464-8c53-4f2e-b7f4-646e3c75b730" Name="InternalLink23" />
+          <InternalLink RefPartnerSideA="feef9519-322d-4a8c-8fe5-a46d4b08c222" RefPartnerSideB="6bbef7fc-a4cd-4551-a1f4-f0e870dc14be" Name="InternalLink24" />
+          <InternalLink RefPartnerSideA="feef9519-322d-4a8c-8fe5-a46d4b08c222" RefPartnerSideB="e997ca89-d3d3-4d70-beac-822cedb535b6" Name="InternalLink25" />
+          <RoleRequirements RefBaseRoleClassPath="Technical Resource/Unit" />
+        </InternalElement>
+        <InternalElement Name="Row B" ID="7affc9a4-ec43-4c2f-9fa9-bf79c7fc36b7" RefBaseSystemUnitPath="SystemUnitClassLib/Row">
+          <InternalElement Name="Transposer B01" ID="d8fa2896-6146-43c0-84ec-dc18057b2000" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Transposer">
+            <ExternalInterface Name="Product_IN" ID="87ffd48e-0880-4427-b6ee-6acc546ecffb" />
+            <ExternalInterface Name="Product_OUT" ID="79ebb5d7-9137-44dd-8b8a-bd7e91d6d3dd" />
+            <InternalElement Name="SEG B01" ID="be735ea7-dc95-464e-ac90-9443d53500a7" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Transposer/UMS">
+              <Attribute Name="ActorState" AttributeDataType="xs:string" />
+              <ExternalInterface Name="Pneumatic_IN" ID="750f8854-caef-4e50-8feb-d6a0fb795db7" />
+              <ExternalInterface Name="ForceFlow_IN" ID="81d5087b-a40d-4a4e-8e96-c7a0a47be8ac" />
+              <ExternalInterface Name="indicatesHWstate_IN" ID="dea521d7-7426-49a7-a07e-fed1c844605e" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="UMS B01" ID="e1c5a036-7401-4507-bbd8-b8c368b141c0">
+              <ExternalInterface Name="Electricity_IN" ID="e307db96-9275-432e-9e5f-1729b5bf0ea6" />
+              <ExternalInterface Name="indicatesHWstate_IN" ID="de57cd40-55a3-4bef-bc6b-0b3319ecdff7" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="LSU B01.1" ID="0e1be52e-6a72-438c-8d81-94b3815817e1" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Transposer/LSU">
+              <Attribute Name="SensorState" AttributeDataType="xs:string" />
+              <ExternalInterface Name="indicatesProductProperties_OUT" ID="f1beb235-126d-49fc-99bd-ab1966db0630" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="LSU B01.2" ID="93425446-da04-4077-b08b-6527695dccaf" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Transposer/LSU">
+              <Attribute Name="SensorState" AttributeDataType="xs:string" />
+              <ExternalInterface Name="indicatesProductProperties_OUT" ID="a6f582cd-4c2a-44f6-94ca-eac496f2f029" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="LSU B01.3" ID="9cfd0793-59e5-43c2-ba3e-ce2b97b8b281" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Transposer/LSU">
+              <Attribute Name="SensorState" AttributeDataType="xs:string" />
+              <ExternalInterface Name="indicatesProductProperties_OUT" ID="d1422e2e-1a46-4048-a235-58167dbafadf" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="LSU B01.4" ID="06fc6674-8ac0-4e38-ae4c-d7c2c76f4f2e" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Transposer/LSU">
+              <Attribute Name="SensorState" AttributeDataType="xs:string" />
+              <ExternalInterface Name="indicatesProductProperties_OUT" ID="ed94ae30-facb-4255-be97-d0c9eaf924f3" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="Technical Resource/Equipment Module" />
+          </InternalElement>
+          <InternalElement Name="Roll Module B02" ID="d835c464-53fd-4f02-bbec-5bfdce1b1b8b" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module">
+            <ExternalInterface Name="Product_IN" ID="67b31ce2-0852-40f7-911d-e721caefa233" />
+            <ExternalInterface Name="Product_OUT" ID="03131ff6-7e86-40e4-921c-35b494315c2a" />
+            <InternalElement Name="SEG B02" ID="2e2994e7-40bc-4572-836a-14aeb846bd57" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module/SEG">
+              <Attribute Name="ActorState" AttributeDataType="xs:string" />
+              <Attribute Name="ActorState1" AttributeDataType="xs:string" />
+              <ExternalInterface Name="Pneumatic_IN" ID="264fadf4-31c3-4388-b63c-e0c49491f63f" />
+              <ExternalInterface Name="ForceFlow_IN" ID="7f85c9b7-3c64-4d7c-984f-78bb2ef67bdf" />
+              <ExternalInterface Name="indicatesHWstate_IN" ID="aeb47966-4288-4df5-b3d0-b4d15be7e4d0" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="LSU B02" ID="199dd738-764a-47db-a99f-095c365bd496" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module/LSU">
+              <Attribute Name="SensorState" AttributeDataType="xs:string" />
+              <Attribute Name="SensorState1" AttributeDataType="xs:string" />
+              <ExternalInterface Name="indicatesProductProperties_OUT" ID="793eb87f-c6cc-4821-9601-7adb43f950ec" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="Technical Resource/Equipment Module" />
+          </InternalElement>
+          <InternalElement Name="Roll Module B03" ID="f7a4694a-4c18-4ab3-b34a-9f32724efa37" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module">
+            <ExternalInterface Name="Product_IN" ID="94f65de7-7a73-4091-8c28-2763535ea551" />
+            <ExternalInterface Name="Product_OUT" ID="f935969d-dfb3-4626-9679-b0b81297162d" />
+            <InternalElement Name="SEG B03" ID="2dca4b96-5155-4afc-a70f-70e4b404e600" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module/SEG">
+              <Attribute Name="ActorState" AttributeDataType="xs:string" />
+              <Attribute Name="ActorState1" AttributeDataType="xs:string" />
+              <ExternalInterface Name="Pneumatic_IN" ID="e6a5a582-72b8-44b8-8ea7-9312f51c717b" />
+              <ExternalInterface Name="ForceFlow_IN" ID="c32927e6-3bc2-4731-b15e-f942ea3c8947" />
+              <ExternalInterface Name="indicatesHWstate_IN" ID="4dea9a5e-6d4e-43c2-9bbe-16c8d2406683" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="LSU B03" ID="ac1a0506-1e92-4ffa-ae61-0bd0ac492a02" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module/LSU">
+              <Attribute Name="SensorState" AttributeDataType="xs:string" />
+              <ExternalInterface Name="indicatesProductProperties_OUT" ID="70ee3a8b-a6ed-4051-9b42-611c100b4b18" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="Technical Resource/Equipment Module" />
+          </InternalElement>
+          <InternalElement Name="Roll Module B04" ID="4562a58d-610e-41fb-9b12-086029d1d758" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module">
+            <ExternalInterface Name="Product_IN" ID="87e8e7f9-2e1a-4ca0-85bb-eb064804cb93" />
+            <ExternalInterface Name="Product_OUT" ID="6c9e11b1-68d7-4dd8-aaaa-0884f5090e71" />
+            <InternalElement Name="SEG B04" ID="4bd5ed1a-5579-4431-bf79-ecaf90061803" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module/SEG">
+              <Attribute Name="ActorState" AttributeDataType="xs:string" />
+              <Attribute Name="ActorState1" AttributeDataType="xs:string" />
+              <ExternalInterface Name="Pneumatic_IN" ID="80151c50-7cda-4480-9018-9a0962cca6dc" />
+              <ExternalInterface Name="ForceFlow_IN" ID="c05c751e-786c-4231-b131-bb40f579f1cc" />
+              <ExternalInterface Name="indicatesHWstate_IN" ID="060b0b4a-9216-49be-bc65-9804194d2eb7" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="LSU B04" ID="f20cda87-3a28-41e7-9516-c0a42adf98da" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module/LSU">
+              <Attribute Name="SensorState" AttributeDataType="xs:string" />
+              <Attribute Name="SensorState1" AttributeDataType="xs:string" />
+              <ExternalInterface Name="indicatesProductProperties_OUT" ID="c2cec3c9-a78a-4fc2-ba08-8b9f043040bd" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="Technical Resource/Equipment Module" />
+          </InternalElement>
+          <InternalElement Name="Roll Module B05" ID="38d4042e-189e-40fb-bbb1-27df0f32fef0" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module">
+            <ExternalInterface Name="Product_IN" ID="0be133c2-115b-4d67-acc1-7cda71758449" />
+            <ExternalInterface Name="Product_OUT" ID="a5c9a016-d673-41de-93f3-a5a4e5446e7c" />
+            <InternalElement Name="LSU B05.1" ID="e68ce230-430d-4c02-9b4e-8f278dd4c48f" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module/LSU">
+              <Attribute Name="SensorState" AttributeDataType="xs:string" />
+              <ExternalInterface Name="indicatesProductProperties_OUT" ID="48ccb54a-7cbe-4cbd-8162-2ae76929618b" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="LSU B05.2" ID="d97e1f91-49ae-410a-b34f-7bc901640f2d" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module/LSU">
+              <Attribute Name="SensorState" AttributeDataType="xs:string" />
+              <ExternalInterface Name="indicatesProductProperties_OUT" ID="55e4ab08-a0b5-4bcb-a01a-8326711b5aee" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="LSU B05.3" ID="b49003ee-94ab-4c30-ba32-dcb8c90c55e3" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module/LSU">
+              <Attribute Name="SensorState" AttributeDataType="xs:string" />
+              <ExternalInterface Name="indicatesProductProperties_OUT" ID="56934224-a3f4-4836-9bfb-239dea520e98" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="UMS B05" ID="46cf1e6b-ad6a-4539-bddc-f2b10a1935bc" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Transposer/UMS">
+              <Attribute Name="ActorState" AttributeDataType="xs:string" />
+              <ExternalInterface Name="Electricity_IN" ID="bbdff3f2-dcc4-416a-9c16-478e3fa6ec32" />
+              <ExternalInterface Name="indicatesHWstate_IN" ID="3e7e3910-cee9-4483-ba86-39d66925a5e2" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="SEG B05" ID="3fb108f1-045a-4a1c-8222-7089a458e26a">
+              <ExternalInterface Name="ForceFlow_IN" ID="b2cbbe46-c6ee-46f8-95ce-6bbda2439af9" />
+              <ExternalInterface Name="Pneumatic_IN" ID="80e26b03-c391-40fc-ae64-24f86e0f18e4" />
+              <ExternalInterface Name="indicatesHWstate_IN" ID="575ac4cb-d7ba-408f-9048-5a644ec537cd" />
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="Technical Resource/Equipment Module" />
+          </InternalElement>
+          <InternalElement Name="Roll Module B06" ID="3c43ea95-ff5f-49d1-a707-01d9f45091fa" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module">
+            <ExternalInterface Name="Product_IN" ID="332bacad-d38b-472c-aa3c-de8c1ff79ad6" />
+            <ExternalInterface Name="Product_OUT" ID="f0cae71b-71e1-4026-b144-7fb6c6e03d6c" />
+            <InternalElement Name="SEG B06" ID="b2b620e6-021f-4285-9e5e-2044d38df1f0" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module/SEG">
+              <Attribute Name="ActorState" AttributeDataType="xs:string" />
+              <Attribute Name="ActorState1" AttributeDataType="xs:string" />
+              <ExternalInterface Name="Pneumatic_IN" ID="e4538edf-5eb2-4d5b-8239-35793617a8ac" />
+              <ExternalInterface Name="ForceFlow_IN" ID="8cab31e1-59aa-48c1-94ab-d01a72ae4cdd" />
+              <ExternalInterface Name="indicatesHWstate_IN" ID="5106032f-03c0-4abb-afc2-c94e4645b009" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="LSU B06" ID="e6fb0744-05ca-4a1b-ba9d-b5830a0fb9d8" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module/LSU">
+              <Attribute Name="SensorState" AttributeDataType="xs:string" />
+              <Attribute Name="SensorState1" AttributeDataType="xs:string" />
+              <ExternalInterface Name="indicatesProductProperties_OUT" ID="7a3e5488-930c-4662-a8ef-3194656eefbe" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="Technical Resource/Equipment Module" />
+          </InternalElement>
+          <InternalElement Name="Roll Module B07" ID="3215ad2f-498b-4871-abe7-3cd65a11863e" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module">
+            <ExternalInterface Name="Product_IN" ID="77e5051d-817d-4034-a24f-567d903a1a95" />
+            <ExternalInterface Name="Product_OUT" ID="c6dd7c91-34c3-49f5-92a6-2656cc529284" />
+            <InternalElement Name="SEG B07" ID="6236c89c-2170-410c-8d40-fb5776e634b9" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module/SEG">
+              <Attribute Name="ActorState" AttributeDataType="xs:string" />
+              <Attribute Name="ActorState1" AttributeDataType="xs:string" />
+              <ExternalInterface Name="Pneumatic_IN" ID="9b573f4c-6cc0-4762-ac04-1aeb4d33b535" />
+              <ExternalInterface Name="ForceFlow_IN" ID="71923727-0e48-4e0a-b15e-67a972137a9a" />
+              <ExternalInterface Name="indicatesHWstate_IN" ID="ed248c0a-8e6f-4b02-8797-7d50375b8b24" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="LSU B07" ID="7689f459-49cc-4f4f-8652-f3305a5da01c" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module/LSU">
+              <Attribute Name="SensorState" AttributeDataType="xs:string" />
+              <Attribute Name="SensorState1" AttributeDataType="xs:string" />
+              <ExternalInterface Name="indicatesProductProperties_OUT" ID="998d91c1-d8e8-4c39-a42e-cfc49441dff2" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="Technical Resource/Equipment Module" />
+          </InternalElement>
+          <InternalElement Name="Roll Module B08" ID="98de9d7a-dd35-40d2-a501-4b75365dfd9c" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module">
+            <ExternalInterface Name="Product_IN" ID="bdc7c4b9-061c-4993-adac-b6a09e3781c7" />
+            <ExternalInterface Name="Product_OUT" ID="70daad6b-62ab-445f-ae1f-ef922ba111cd" />
+            <InternalElement Name="SEG B08" ID="4c569247-f119-4695-8617-7bc5be9a200d" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module/SEG">
+              <Attribute Name="ActorState" AttributeDataType="xs:string" />
+              <Attribute Name="ActorState1" AttributeDataType="xs:string" />
+              <ExternalInterface Name="Pneumatic_IN" ID="392f21bd-981c-4915-a255-0176fdb24bf8" />
+              <ExternalInterface Name="ForceFlow_IN" ID="e1b8840c-2096-4db1-a7c1-0b4442ce3b67" />
+              <ExternalInterface Name="indicatesHWstate_IN" ID="1cb88634-cd5d-4ca2-ad31-1d80cf36978d" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="LSU B08" ID="1f600cda-320a-4d6b-9bc9-f4a05bca0d1c" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module/LSU">
+              <Attribute Name="SensorState" AttributeDataType="xs:string" />
+              <Attribute Name="SensorState1" AttributeDataType="xs:string" />
+              <ExternalInterface Name="indicatesProductProperties_OUT" ID="376aa89f-f1d5-410e-a5f1-a6683e52d7cf" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="Technical Resource/Equipment Module" />
+          </InternalElement>
+          <InternalElement Name="Roll Module B09" ID="a31a1d36-91fe-4c36-bca1-3fac28170f4b" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module">
+            <ExternalInterface Name="Product_IN" ID="8d5705ac-7873-462a-9db3-2870499f7b34" />
+            <ExternalInterface Name="Product_OUT" ID="a57bf84f-ecc1-4a50-8f6d-74fb5a67f9aa" />
+            <InternalElement Name="SEG B09" ID="4c1b548c-8a72-418e-ac1a-9373bf0bce5e" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module/SEG">
+              <Attribute Name="ActorState" AttributeDataType="xs:string" />
+              <ExternalInterface Name="Pneumatic_IN" ID="7798b9ab-08fb-45bf-8a65-d9bdf78a2534" />
+              <ExternalInterface Name="ForceFlow_IN" ID="95283e01-41f0-4eec-8783-bb2b01a62944" />
+              <ExternalInterface Name="indicatesHWstate_IN" ID="dc7361c0-e0f9-4d55-92fa-09630f6158f0" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="LSU B09" ID="46db7aec-8f48-4bd9-ac79-2c2cdc2f5e5a" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module/LSU">
+              <Attribute Name="SensorState" AttributeDataType="xs:string" />
+              <ExternalInterface Name="indicatesProductProperties_OUT" ID="b1f056db-6596-4ef9-bac9-98f0ef54e8ec" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="Technical Resource/Equipment Module" />
+          </InternalElement>
+          <InternalElement Name="Roll Module B10" ID="7ec86efb-3b0d-44d7-aed0-186a4f09cc9a" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module">
+            <ExternalInterface Name="Product_IN" ID="5273a085-d861-4059-a2d2-4ddd926985ef" />
+            <ExternalInterface Name="Product_OUT" ID="e52b4a2c-f3a5-40ab-a8cf-3f4b82fbada9" />
+            <InternalElement Name="UMS B10" ID="d32b5674-426f-4212-9ae2-bc1e15f3c9ab" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Transposer/UMS">
+              <Attribute Name="ActorState" AttributeDataType="xs:string" />
+              <ExternalInterface Name="Electricity_IN" ID="4ce9949b-47ee-4393-9960-2a127564f7c8" />
+              <ExternalInterface Name="indicatesHWstate_IN" ID="f2f21e73-b89f-4512-a4eb-8fe81e8e2ad9" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="SEG B10" ID="d666d04c-0da7-4a9a-8ef4-01ee52d75a94">
+              <ExternalInterface Name="Pneumatic_IN" ID="630c2147-2cde-4536-9a17-26d17b461035" />
+              <ExternalInterface Name="ForceFlow_IN" ID="931e91a9-da3a-4631-ab60-ee19e4e29712" />
+              <ExternalInterface Name="indicatesHWstate_IN" ID="12fbd2ca-d1f5-4c04-a318-2aa3bd76d9b7" />
+            </InternalElement>
+            <InternalElement Name="LSU B10" ID="c05f178f-c599-4eba-8708-fc668210b93c" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module/LSU">
+              <Attribute Name="SensorState" AttributeDataType="xs:string" />
+              <ExternalInterface Name="indicatesProductProperties_OUT" ID="ba43e815-f681-4ebf-aeeb-94c618fdbcb4" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="LMP B10.1" ID="d10ad9d6-4138-453c-ba47-e6ed4fada189" RefBaseSystemUnitPath="SystemUnitClassLib/Lamps/LMP">
+              <Attribute Name="ActorState" AttributeDataType="xs:string" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="LMP B10.2" ID="b5e06fdf-78a1-4bce-819f-0b3f61c91d37" RefBaseSystemUnitPath="SystemUnitClassLib/Lamps/LMP">
+              <Attribute Name="ActorState" AttributeDataType="xs:string" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="LMP B10.3" ID="565a44fa-e889-4355-9ac3-c012b101e3e7" RefBaseSystemUnitPath="SystemUnitClassLib/Lamps/LMP">
+              <Attribute Name="ActorState" AttributeDataType="xs:string" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="Technical Resource/Equipment Module" />
+          </InternalElement>
+          <InternalElement Name="Roll Module B11" ID="95e6d7ff-5f04-4424-b6f1-c232deb954cb" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module">
+            <ExternalInterface Name="Product_IN" ID="3ec4aaf3-4a44-4cb7-a4d9-a26320f20ed0" />
+            <ExternalInterface Name="Product_OUT" ID="54f1e679-f8ca-46eb-83ed-f92af12fbfa7" />
+            <InternalElement Name="SEG B11" ID="946b1fe7-d5f6-4aa7-ad79-0bf996582c90" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module/SEG">
+              <Attribute Name="ActorState" AttributeDataType="xs:string" />
+              <ExternalInterface Name="Pneumatic_IN" ID="7c161875-6c1b-4360-9787-2411224b1c27" />
+              <ExternalInterface Name="ForceFlow_IN" ID="26a4e691-9fda-4605-83c8-d2ecb9725875" />
+              <ExternalInterface Name="indicatesHWstate_IN" ID="b59be3ec-2374-4d80-85f2-edb15b05eb65" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="LSU B11" ID="050f12cd-c6ba-428b-8b44-abfc9d73d169" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module/LSU">
+              <Attribute Name="SensorState" AttributeDataType="xs:string" />
+              <ExternalInterface Name="indicatesProductProperties_OUT" ID="3e54b5d8-8014-4d2d-8865-f8f27a494f3a" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="STO B11" ID="7e3dd20b-5424-4b2e-afff-1a74f2e816c4" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module/Stopper">
+              <Attribute Name="ActorState" AttributeDataType="xs:string" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="Technical Resource/Equipment Module" />
+          </InternalElement>
+          <InternalElement Name="Roll Module B12" ID="52ea2d1d-d481-415d-8212-d2890872cd43" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module">
+            <ExternalInterface Name="Product_IN" ID="9fe070a7-cabf-43eb-885c-e05a13c6fbd4" />
+            <ExternalInterface Name="Product_OUT" ID="fb6af3f4-4c85-4937-b734-0fa1a2e39730" />
+            <InternalElement Name="SEG B12" ID="a548ee66-246b-45e1-a6f6-1322179d224d" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module/SEG">
+              <Attribute Name="ActorState" AttributeDataType="xs:string" />
+              <ExternalInterface Name="Pneumatic_IN" ID="a63e23c5-aa1e-4013-ac0b-95706e17942b" />
+              <ExternalInterface Name="ForceFlow_IN" ID="902c7f78-530c-4b20-a51d-b4b63eb4f16c" />
+              <ExternalInterface Name="indicatesHWstate_IN" ID="d3956a06-8395-4c27-bf68-8b41c190acf1" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="LSU B12" ID="3bd5e2ab-bf6f-4bfa-a0dd-db7eb37ab4ea" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module/LSU">
+              <Attribute Name="SensorState" AttributeDataType="xs:string" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="Technical Resource/Equipment Module" />
+          </InternalElement>
+          <InternalElement Name="Roll Module B13" ID="2c25bcf0-4ce2-461a-9a9c-898f9cdc4785" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module">
+            <ExternalInterface Name="Product_IN" ID="822259bb-5c00-44b1-b933-a975529713cb" />
+            <ExternalInterface Name="Product_OUT" ID="6f0df24b-ee8f-44c2-baad-12327b13aa7c" />
+            <InternalElement Name="SEG B13" ID="ca060d00-22c8-472a-9ece-59c431604552" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module/SEG">
+              <Attribute Name="ActorState" AttributeDataType="xs:string" />
+              <ExternalInterface Name="Pneumatic_IN" ID="f0dfa8c9-7612-4e49-9424-44d234783de2" />
+              <ExternalInterface Name="ForceFlow_IN" ID="cf88dd0e-9156-4c6f-bfb8-d9106133150c" />
+              <ExternalInterface Name="indicatesHWstate_IN" ID="c9ff3b50-78bb-4858-9381-5555087e63a5" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="LSU B13" ID="62cd3153-887b-4796-8e58-ec52b5a4fbac" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Roll Module/LSU">
+              <Attribute Name="SensorState" AttributeDataType="xs:string" />
+              <ExternalInterface Name="indicatesProductProperties_OUT" ID="eb23896e-453f-4709-b94f-a208d4cb786d" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="Technical Resource/Equipment Module" />
+          </InternalElement>
+          <InternalElement Name="Transposer B14" ID="4f672969-baaa-40aa-a3d9-ffaeb78c9b68" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Transposer">
+            <ExternalInterface Name="Product_IN" ID="1af3b5e5-10ad-4455-97a1-dee5b56adc2a" />
+            <ExternalInterface Name="Product_OUT" ID="39fe6fa0-7c5d-4cbb-a907-1ee1f052131d" />
+            <InternalElement Name="UMS B14" ID="da4d1032-9fea-4ff0-a777-bb497b231f81" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Transposer/UMS">
+              <Attribute Name="ActorState" AttributeDataType="xs:string" />
+              <ExternalInterface Name="Electricity_IN" ID="5d80ef7e-8646-47ec-a9c2-a1fc49244262" />
+              <ExternalInterface Name="indicatesHWstate_IN" ID="420bfa64-5a80-4b52-b1fb-6230ab688e34" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="SEG B14" ID="16e051de-9550-43ef-a140-ad7e279c7403">
+              <ExternalInterface Name="ForceFlow_IN" ID="9fb44b77-4719-4e95-a376-b3c6c1b6b71e" />
+              <ExternalInterface Name="Pneumatic_IN" ID="a5578678-294f-4eac-bdcf-a37aab0346f4" />
+              <ExternalInterface Name="indicatesHWstate_IN" ID="befa6245-d88c-42ed-9875-f010dae2806d" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="STO B14" ID="48530e8a-a3f6-4c38-866e-649a556bce91" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Transposer/Stopper">
+              <Attribute Name="ActorState" AttributeDataType="xs:string" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="LSH AB" ID="601cbadc-a5a4-4bf9-9dc4-e3245af193ae" RefBaseSystemUnitPath="SystemUnitClassLib/Row/Transposer/LSH">
+              <Attribute Name="SensorState" AttributeDataType="xs:string" />
+              <ExternalInterface Name="indicatesProductProperties_OUT" ID="32694c0b-6a87-4c01-9943-8af181ce7707" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="Technical Resource/Equipment Module" />
+          </InternalElement>
+          <InternalElement Name="Belt  B" ID="340126b1-0074-430b-a1a6-006cbb9f4692">
+            <ExternalInterface Name="ForceFlow_IN" ID="386740ac-5631-4b06-a0d5-d621a42ddd58" />
+            <ExternalInterface Name="ForceFlow_OUT" ID="f7965a2f-d817-42d2-923a-c12700ad0658" />
+          </InternalElement>
+          <InternalElement Name="Drive B" ID="e2a2f019-0bc5-4fb9-b853-445984edd03d">
+            <ExternalInterface Name="Electricity_IN" ID="8f783d0f-43b0-4c04-9255-03c6830e60c0" />
+            <ExternalInterface Name="ForceFlow_OUT" ID="05cbdb0b-03fc-4090-90f5-d13f84ac3471" />
+            <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+          </InternalElement>
+          <InternalLink RefPartnerSideA="79ebb5d7-9137-44dd-8b8a-bd7e91d6d3dd" RefPartnerSideB="67b31ce2-0852-40f7-911d-e721caefa233" Name="InternalLink" />
+          <InternalLink RefPartnerSideA="03131ff6-7e86-40e4-921c-35b494315c2a" RefPartnerSideB="94f65de7-7a73-4091-8c28-2763535ea551" Name="InternalLink1" />
+          <InternalLink RefPartnerSideA="f935969d-dfb3-4626-9679-b0b81297162d" RefPartnerSideB="87e8e7f9-2e1a-4ca0-85bb-eb064804cb93" Name="InternalLink2" />
+          <InternalLink RefPartnerSideA="6c9e11b1-68d7-4dd8-aaaa-0884f5090e71" RefPartnerSideB="0be133c2-115b-4d67-acc1-7cda71758449" Name="InternalLink3" />
+          <InternalLink RefPartnerSideA="a5c9a016-d673-41de-93f3-a5a4e5446e7c" RefPartnerSideB="332bacad-d38b-472c-aa3c-de8c1ff79ad6" Name="InternalLink4" />
+          <InternalLink RefPartnerSideA="f0cae71b-71e1-4026-b144-7fb6c6e03d6c" RefPartnerSideB="77e5051d-817d-4034-a24f-567d903a1a95" Name="InternalLink5" />
+          <InternalLink RefPartnerSideA="c6dd7c91-34c3-49f5-92a6-2656cc529284" RefPartnerSideB="bdc7c4b9-061c-4993-adac-b6a09e3781c7" Name="InternalLink6" />
+          <InternalLink RefPartnerSideA="70daad6b-62ab-445f-ae1f-ef922ba111cd" RefPartnerSideB="8d5705ac-7873-462a-9db3-2870499f7b34" Name="InternalLink7" />
+          <InternalLink RefPartnerSideA="a57bf84f-ecc1-4a50-8f6d-74fb5a67f9aa" RefPartnerSideB="5273a085-d861-4059-a2d2-4ddd926985ef" Name="InternalLink8" />
+          <InternalLink RefPartnerSideA="e52b4a2c-f3a5-40ab-a8cf-3f4b82fbada9" RefPartnerSideB="3ec4aaf3-4a44-4cb7-a4d9-a26320f20ed0" Name="InternalLink9" />
+          <InternalLink RefPartnerSideA="54f1e679-f8ca-46eb-83ed-f92af12fbfa7" RefPartnerSideB="9fe070a7-cabf-43eb-885c-e05a13c6fbd4" Name="InternalLink10" />
+          <InternalLink RefPartnerSideA="fb6af3f4-4c85-4937-b734-0fa1a2e39730" RefPartnerSideB="822259bb-5c00-44b1-b933-a975529713cb" Name="InternalLink11" />
+          <InternalLink RefPartnerSideA="6f0df24b-ee8f-44c2-baad-12327b13aa7c" RefPartnerSideB="1af3b5e5-10ad-4455-97a1-dee5b56adc2a" Name="InternalLink12" />
+          <InternalLink RefPartnerSideA="05cbdb0b-03fc-4090-90f5-d13f84ac3471" RefPartnerSideB="386740ac-5631-4b06-a0d5-d621a42ddd58" Name="InternalLink13" />
+          <InternalLink RefPartnerSideA="f7965a2f-d817-42d2-923a-c12700ad0658" RefPartnerSideB="9fb44b77-4719-4e95-a376-b3c6c1b6b71e" Name="InternalLink14" />
+          <InternalLink RefPartnerSideA="f7965a2f-d817-42d2-923a-c12700ad0658" RefPartnerSideB="81d5087b-a40d-4a4e-8e96-c7a0a47be8ac" Name="InternalLink15" />
+          <InternalLink RefPartnerSideA="f7965a2f-d817-42d2-923a-c12700ad0658" RefPartnerSideB="7f85c9b7-3c64-4d7c-984f-78bb2ef67bdf" Name="InternalLink16" />
+          <InternalLink RefPartnerSideA="f7965a2f-d817-42d2-923a-c12700ad0658" RefPartnerSideB="c32927e6-3bc2-4731-b15e-f942ea3c8947" Name="InternalLink17" />
+          <InternalLink RefPartnerSideA="f7965a2f-d817-42d2-923a-c12700ad0658" RefPartnerSideB="c05c751e-786c-4231-b131-bb40f579f1cc" Name="InternalLink18" />
+          <InternalLink RefPartnerSideA="f7965a2f-d817-42d2-923a-c12700ad0658" RefPartnerSideB="b2cbbe46-c6ee-46f8-95ce-6bbda2439af9" Name="InternalLink19" />
+          <InternalLink RefPartnerSideA="f7965a2f-d817-42d2-923a-c12700ad0658" RefPartnerSideB="8cab31e1-59aa-48c1-94ab-d01a72ae4cdd" Name="InternalLink20" />
+          <InternalLink RefPartnerSideA="f7965a2f-d817-42d2-923a-c12700ad0658" RefPartnerSideB="71923727-0e48-4e0a-b15e-67a972137a9a" Name="InternalLink21" />
+          <InternalLink RefPartnerSideA="f7965a2f-d817-42d2-923a-c12700ad0658" RefPartnerSideB="e1b8840c-2096-4db1-a7c1-0b4442ce3b67" Name="InternalLink22" />
+          <InternalLink RefPartnerSideA="f7965a2f-d817-42d2-923a-c12700ad0658" RefPartnerSideB="95283e01-41f0-4eec-8783-bb2b01a62944" Name="InternalLink23" />
+          <InternalLink RefPartnerSideA="f7965a2f-d817-42d2-923a-c12700ad0658" RefPartnerSideB="931e91a9-da3a-4631-ab60-ee19e4e29712" Name="InternalLink24" />
+          <InternalLink RefPartnerSideA="f7965a2f-d817-42d2-923a-c12700ad0658" RefPartnerSideB="26a4e691-9fda-4605-83c8-d2ecb9725875" Name="InternalLink25" />
+          <InternalLink RefPartnerSideA="f7965a2f-d817-42d2-923a-c12700ad0658" RefPartnerSideB="902c7f78-530c-4b20-a51d-b4b63eb4f16c" Name="InternalLink26" />
+          <InternalLink RefPartnerSideA="f7965a2f-d817-42d2-923a-c12700ad0658" RefPartnerSideB="cf88dd0e-9156-4c6f-bfb8-d9106133150c" Name="InternalLink27" />
+          <InternalLink RefPartnerSideA="750f8854-caef-4e50-8feb-d6a0fb795db7" RefPartnerSideB="e6a5a582-72b8-44b8-8ea7-9312f51c717b" Name="InternalLink28" />
+          <RoleRequirements RefBaseRoleClassPath="Technical Resource/Unit" />
+        </InternalElement>
+        <InternalElement Name="Curve C" ID="a3a95e04-e793-4ace-8a38-fcf0c339a706" RefBaseSystemUnitPath="SystemUnitClassLib/Curve">
+          <InternalElement Name="Round Module C01" ID="8ee0047f-14af-4662-b887-0ee6bb0f8ca8" RefBaseSystemUnitPath="SystemUnitClassLib/Curve/Round Module">
+            <ExternalInterface Name="Product_IN" ID="61e7472c-058d-4b53-a1f1-456a4a444243" />
+            <ExternalInterface Name="Product_OUT" ID="8c1e70bd-6be0-4667-9ddb-392d6b2ac4b6" />
+            <InternalElement Name="SEG C01" ID="48bee400-4c9d-4ae4-8212-618bc7208787" RefBaseSystemUnitPath="SystemUnitClassLib/Curve/Round Module/SEG">
+              <Attribute Name="ActorState" AttributeDataType="xs:string" />
+              <ExternalInterface Name="Electricity_IN" ID="2ec0e150-3526-4a95-b766-575284b582d0" />
+              <ExternalInterface Name="indicatesHWstate_IN" ID="2ee5a1b6-889d-42f2-a07b-b999fdeed387" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="LSH C01.1" ID="00243ab0-86df-4449-bfcd-9a9731e354c8" RefBaseSystemUnitPath="SystemUnitClassLib/Curve/Round Module/LSH">
+              <ExternalInterface Name="indicatesProductProperties_OUT" ID="a33d4664-f2ac-4db0-8570-a3ea0ca0be92" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="LSH C01.2" ID="df184404-e071-4a93-b102-cce9eeb0e3c8" RefBaseSystemUnitPath="SystemUnitClassLib/Curve/Round Module/LSH">
+              <ExternalInterface Name="indicatesProductProperties_OUT" ID="548edbeb-2cf3-4668-9206-0ee508d89d60" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="Technical Resource/Equipment Module" />
+          </InternalElement>
+          <InternalElement Name="Round Module C02" ID="9835852e-a470-4ac4-8a94-d4fdd9882d75" RefBaseSystemUnitPath="SystemUnitClassLib/Curve/Round Module">
+            <ExternalInterface Name="Product_IN" ID="400c5ef7-d9aa-4041-aca7-a9a34bf7bcec" />
+            <ExternalInterface Name="Product_OUT" ID="9b7a312e-8505-4968-87cd-70031462575d" />
+            <InternalElement Name="SEG C02" ID="28872ac0-ef50-4bb4-a18e-153d8f05a44f" RefBaseSystemUnitPath="SystemUnitClassLib/Curve/Round Module/SEG">
+              <Attribute Name="ActorState" AttributeDataType="xs:string" />
+              <ExternalInterface Name="Electricity_IN" ID="a884ff2e-b089-489e-8a47-c26d78537cdd" />
+              <ExternalInterface Name="indicatesHWstate_IN" ID="7fcab0ce-bdf1-4873-91cf-32e87a04ce14" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="LSH C02.1" ID="77734813-da9b-4b08-ac46-720590b15de5" RefBaseSystemUnitPath="SystemUnitClassLib/Curve/Round Module/LSH">
+              <Attribute Name="SensorState" AttributeDataType="xs:string" />
+              <ExternalInterface Name="indicatesProductProperties_OUT" ID="1dabe6c6-8e19-461d-b729-fd3be28389dc" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="Technical Resource/Equipment Module" />
+          </InternalElement>
+          <InternalElement Name="Round Module C03" ID="fadf8b45-37f2-4027-935b-86a03bc24402" RefBaseSystemUnitPath="SystemUnitClassLib/Curve/Round Module">
+            <ExternalInterface Name="Product_IN" ID="7053a8f6-fa6d-4513-a3a6-b747d9847cf1" />
+            <ExternalInterface Name="Product_OUT" ID="066ef5af-a8b2-47bc-a20f-206cdc65ea49" />
+            <InternalElement Name="SEG C03" ID="a8e1c9f1-b14e-4e7f-8674-dd451c35cad5" RefBaseSystemUnitPath="SystemUnitClassLib/Curve/Round Module/SEG">
+              <Attribute Name="ActorState" AttributeDataType="xs:string" />
+              <ExternalInterface Name="Electricity_IN" ID="37759410-be64-4503-b370-7d6bf04420ee" />
+              <ExternalInterface Name="indicatesHWstate_IN" ID="24bcf76e-4df7-4a12-b04d-a96875325443" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="LSH C03.1" ID="41d790aa-334f-4ecb-841e-51b7934dff9c" RefBaseSystemUnitPath="SystemUnitClassLib/Curve/Round Module/LSH">
+              <Attribute Name="SensorState" AttributeDataType="xs:string" />
+              <ExternalInterface Name="indicatesProductProperties_OUT" ID="c67dceab-ea99-4f52-ba51-ce7095ee5b44" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="Technical Resource/Equipment Module" />
+          </InternalElement>
+          <InternalElement Name="Round Module C04" ID="d48ef01e-9fae-48fd-b42a-ac2c26d0dcb7" RefBaseSystemUnitPath="SystemUnitClassLib/Curve/Round Module">
+            <ExternalInterface Name="Product_IN" ID="279db22b-317f-484a-ba97-3493b11b747f" />
+            <ExternalInterface Name="Product_OUT" ID="8a96b7fa-2135-45a8-ad4b-a6463cf26bec" />
+            <InternalElement Name="SEG C04" ID="b0087529-3f16-40e0-9a5d-767384f86e8f" RefBaseSystemUnitPath="SystemUnitClassLib/Curve/Round Module/SEG">
+              <Attribute Name="ActorState" AttributeDataType="xs:string" />
+              <ExternalInterface Name="Electricity_IN" ID="b046fbf3-49f8-4200-ab93-a71a7da61659" />
+              <ExternalInterface Name="indicatesHWstate_IN" ID="7aa3a0a5-bb55-40f3-8593-71d4a84b81fe" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="LSH C04.1" ID="9e472223-816b-4c4e-a237-fa45576ceacd" RefBaseSystemUnitPath="SystemUnitClassLib/Curve/Round Module/LSH">
+              <Attribute Name="SensorState" AttributeDataType="xs:string" />
+              <ExternalInterface Name="indicatesProductProperties_OUT" ID="c70cb9ab-4fd4-4892-b78b-442d7716099f" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="Technical Resource/Equipment Module" />
+          </InternalElement>
+          <InternalElement Name="Round Module C05" ID="30eb679c-ab82-43d3-aa5e-cce4eb877da3" RefBaseSystemUnitPath="SystemUnitClassLib/Curve/Round Module">
+            <ExternalInterface Name="Product_IN" ID="5dbb3060-7c4a-4efd-9370-90c1d54c14b2" />
+            <ExternalInterface Name="Product_OUT" ID="8a9759f1-cd46-483d-a4bd-86b28d0a1b9d" />
+            <InternalElement Name="SEG C05" ID="cef272db-c4c1-4a14-9895-ad5841d7f969" RefBaseSystemUnitPath="SystemUnitClassLib/Curve/Round Module/SEG">
+              <Attribute Name="ActorState" AttributeDataType="xs:string" />
+              <ExternalInterface Name="Electricity_IN" ID="a0649402-26b0-4e07-b49e-8038ea9fe261" />
+              <ExternalInterface Name="indicatesHWstate_IN" ID="6cdf4e98-b565-4e5c-9701-72d4b2d67df2" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="LSH C05.1" ID="573b720a-a4a9-49ec-b238-d201f554999b" RefBaseSystemUnitPath="SystemUnitClassLib/Curve/Round Module/LSH">
+              <Attribute Name="SensorState" AttributeDataType="xs:string" />
+              <ExternalInterface Name="indicatesProductProperties_OUT" ID="c33e9ee6-9331-4691-ae71-6ac0b798c455" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="STO C05" ID="2bdcf611-24e1-4e64-9458-c446ee966b7d" RefBaseSystemUnitPath="SystemUnitClassLib/Curve/Round Module/Stopper">
+              <Attribute Name="ActorState" AttributeDataType="xs:string" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="Technical Resource/Equipment Module" />
+          </InternalElement>
+          <InternalElement Name="Round Module C06" ID="1335bb0b-2bb2-441b-b6f9-72e298dc8bab" RefBaseSystemUnitPath="SystemUnitClassLib/Curve/Round Module">
+            <ExternalInterface Name="Product_IN" ID="388f5400-b049-4e5f-b450-5d0692a42e49" />
+            <ExternalInterface Name="Product_OUT" ID="7b7d8b5e-4e05-4eb7-9cda-7c21292ae0d9" />
+            <InternalElement Name="SEG C06" ID="cfd9077a-0b5a-4a61-8c0a-6a6bb84dcfb7" RefBaseSystemUnitPath="SystemUnitClassLib/Curve/Round Module/SEG">
+              <Attribute Name="ActorState" AttributeDataType="xs:string" />
+              <ExternalInterface Name="Electricity_IN" ID="a19f614b-520f-4af5-9ffe-e60c6c19f06b" />
+              <ExternalInterface Name="indicatesHWstate_IN" ID="fe3abfb0-091e-4db6-a232-58ef520a87c6" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="LSH C06.1" ID="0564a349-a510-4bb1-a442-cebfcb2b7c42" RefBaseSystemUnitPath="SystemUnitClassLib/Curve/Round Module/LSH">
+              <Attribute Name="SensorState" AttributeDataType="xs:string" />
+              <ExternalInterface Name="indicatesProductProperties_OUT" ID="d2e6b922-58a9-49ff-81be-3f2cf36a52b7" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="Technical Resource/Equipment Module" />
+          </InternalElement>
+          <InternalElement Name="Round Module C07" ID="011f691e-78ce-4ff5-b8ed-9532794b8495" RefBaseSystemUnitPath="SystemUnitClassLib/Curve/Round Module">
+            <ExternalInterface Name="Product_IN" ID="36a05f5c-a927-4c0e-b667-3b54f9578790" />
+            <ExternalInterface Name="Product_OUT" ID="81696158-64fc-4c6e-bfed-4f34462693ac" />
+            <InternalElement Name="SEG C07" ID="d913cead-ab35-4bfb-896b-22cf886f89e4" RefBaseSystemUnitPath="SystemUnitClassLib/Curve/Round Module/SEG">
+              <Attribute Name="ActorState" AttributeDataType="xs:string" />
+              <ExternalInterface Name="Electricity_IN" ID="3714882e-dd88-4733-857b-2dab6b497312" />
+              <ExternalInterface Name="indicatesHWstate_IN" ID="ee12dc3c-66b9-4870-a011-74ee5720b7ac" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="LSH C07.1" ID="194d1f90-1ceb-4b06-861b-99296cd5d782" RefBaseSystemUnitPath="SystemUnitClassLib/Curve/Round Module/LSH">
+              <Attribute Name="SensorState" AttributeDataType="xs:string" />
+              <ExternalInterface Name="indicatesProductProperties_OUT" ID="b9678f83-6b6f-4a60-845e-0ddba770d061" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <InternalElement Name="LSH C07.2" ID="c99c16a8-b7a6-41f8-8fc8-1ad4c446ad35" RefBaseSystemUnitPath="SystemUnitClassLib/Curve/Round Module/LSH">
+              <Attribute Name="SensorState" AttributeDataType="xs:string" />
+              <ExternalInterface Name="indicatesProductProperties_OUT" ID="521e0259-0282-4aeb-beca-f029b7cd3bf1" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="Technical Resource/Equipment Module" />
+          </InternalElement>
+          <InternalLink RefPartnerSideA="8c1e70bd-6be0-4667-9ddb-392d6b2ac4b6" RefPartnerSideB="400c5ef7-d9aa-4041-aca7-a9a34bf7bcec" Name="InternalLink" />
+          <InternalLink RefPartnerSideA="9b7a312e-8505-4968-87cd-70031462575d" RefPartnerSideB="7053a8f6-fa6d-4513-a3a6-b747d9847cf1" Name="InternalLink1" />
+          <InternalLink RefPartnerSideA="066ef5af-a8b2-47bc-a20f-206cdc65ea49" RefPartnerSideB="279db22b-317f-484a-ba97-3493b11b747f" Name="InternalLink2" />
+          <InternalLink RefPartnerSideA="8a96b7fa-2135-45a8-ad4b-a6463cf26bec" RefPartnerSideB="5dbb3060-7c4a-4efd-9370-90c1d54c14b2" Name="InternalLink3" />
+          <InternalLink RefPartnerSideA="8a9759f1-cd46-483d-a4bd-86b28d0a1b9d" RefPartnerSideB="388f5400-b049-4e5f-b450-5d0692a42e49" Name="InternalLink4" />
+          <InternalLink RefPartnerSideA="7b7d8b5e-4e05-4eb7-9cda-7c21292ae0d9" RefPartnerSideB="36a05f5c-a927-4c0e-b667-3b54f9578790" Name="InternalLink5" />
+          <RoleRequirements RefBaseRoleClassPath="Technical Resource/Unit" />
+        </InternalElement>
+        <InternalElement Name="Pneumatic Device" ID="8ded0bb1-57ce-4f8c-a737-601fb49e9347">
+          <ExternalInterface Name="Pneumatic_OUT" ID="5232e941-5315-4ca5-b8a5-d63209f2b634" />
+          <ExternalInterface Name="indicatesHWstate_IN" ID="c314bc0f-71cd-48c9-9147-0a2a207434ec" />
+          <RoleRequirements RefBaseRoleClassPath="Technical Resource/Unit" />
+          <RoleRequirements RefBaseRoleClassPath="Technical Resource/Equipment Module" />
+        </InternalElement>
+        <InternalElement Name="Power Supply" ID="f137b71c-0b83-48f1-b623-bc1ac8769ec2">
+          <ExternalInterface Name="Electricity_OUT" ID="218fafbf-5e70-4cc2-ae99-ae2a3a312d72" />
+          <ExternalInterface Name="indicatesHWstate_IN" ID="713ae816-655b-400c-b5af-c06910ba629e" />
+          <RoleRequirements RefBaseRoleClassPath="Technical Resource/Equipment Module" />
+        </InternalElement>
+        <InternalElement Name="HMI" ID="9155957c-37df-4b86-8e10-0d801681b5e0" RefBaseSystemUnitPath="SystemUnitClassLib/HMI">
+          <InternalElement Name="Acknowledgement" ID="ad19a494-0523-4b26-a5d8-b90112f747f6" RefBaseSystemUnitPath="SystemUnitClassLib/HMI/Acknowledgement">
+            <InternalElement Name="SCH_03" ID="c308b530-c67c-4577-8ecf-9c71e0617d1f" RefBaseSystemUnitPath="SystemUnitClassLib/HMI/Acknowledgement/SCH_03">
+              <Attribute Name="ActorState" AttributeDataType="xs:string" />
+              <ExternalInterface Name="indicatesStateChange_OUT" ID="8d65c301-2c50-47de-a799-52c15d6f3edc" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="Technical Resource/Equipment Module" />
+          </InternalElement>
+          <InternalElement Name="On" ID="0672002d-4c2b-4687-9c34-5d91c51807fe" RefBaseSystemUnitPath="SystemUnitClassLib/HMI/On">
+            <InternalElement Name="SCH_02" ID="fa8a3d15-20ae-4537-a93c-103d0058b95f" RefBaseSystemUnitPath="SystemUnitClassLib/HMI/On/SCH_02">
+              <Attribute Name="ActorState" AttributeDataType="xs:string" />
+              <ExternalInterface Name="indicatesStateChange_OUT" ID="d4af9d5e-7a9f-4e14-b21d-333e3e39b2ac" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="Technical Resource/Equipment Module" />
+          </InternalElement>
+          <InternalElement Name="Off" ID="ec2db058-3d6b-403f-8430-c2ed24a99c0b" RefBaseSystemUnitPath="SystemUnitClassLib/HMI/Off">
+            <InternalElement Name="SCH_01" ID="05905cf6-a7a1-4d21-ae73-55926c127005" RefBaseSystemUnitPath="SystemUnitClassLib/HMI/Off/SCH_01">
+              <Attribute Name="ActorState" AttributeDataType="xs:string" />
+              <ExternalInterface Name="indicatesStateChange_OUT" ID="f8f50d50-4591-4cdf-a4c6-97cc53d33269" />
+              <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="Technical Resource/Equipment Module" />
+          </InternalElement>
+          <InternalElement Name="Switch" ID="51d35add-f9a3-4ce9-a60e-ca43b991b7d0" RefBaseSystemUnitPath="SystemUnitClassLib/HMI/Switch">
+            <InternalElement Name="SCH C03" ID="fcf1eaea-af27-4162-8319-912090228feb" RefBaseSystemUnitPath="SystemUnitClassLib/HMI/Switch/SCH">
+              <Attribute Name="SwitchState" AttributeDataType="xs:string" />
+            </InternalElement>
+          </InternalElement>
+          <RoleRequirements RefBaseRoleClassPath="Technical Resource/Unit" />
+        </InternalElement>
+        <InternalElement Name="Scanner" ID="af90209c-89f3-4c94-9b8c-42b1c9e9cffc">
+          <ExternalInterface Name="indicatesProductProperties_OUT" ID="c3de30c8-e22d-4c07-96ea-026d4de2105c" />
+          <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+        </InternalElement>
+        <InternalElement Name="I_NOT_A" ID="3c5e3cc4-4818-4223-a8c2-c07685ee792f">
+          <ExternalInterface Name="indicatesStateChange_OUT" ID="27e84325-0450-459a-bcaa-5be6c21fa5e4" />
+          <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+        </InternalElement>
+        <InternalElement Name="I_NOT_B" ID="33deef8d-424b-4af2-bfae-46327c0ca388">
+          <ExternalInterface Name="indicatesStateChange_OUT" ID="697cc204-2432-482c-ad63-5d3c1895cfd6" />
+          <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+        </InternalElement>
+        <InternalElement Name="I_NOT_S" ID="58d0818e-b201-47b7-8e5d-bcf461ff72e4">
+          <ExternalInterface Name="indicatesStateChange_OUT" ID="d32c74c1-9162-4241-ba55-0c6b767520f1" />
+          <RoleRequirements RefBaseRoleClassPath="Technical Resource/Control Module" />
+        </InternalElement>
+        <InternalLink RefPartnerSideA="5232e941-5315-4ca5-b8a5-d63209f2b634" RefPartnerSideB="2a7970b0-0462-4767-bf7a-50590b6f02d5" Name="InternalLink" />
+        <InternalLink RefPartnerSideA="5232e941-5315-4ca5-b8a5-d63209f2b634" RefPartnerSideB="8f0f3fa5-d0fc-43eb-8881-8495730fcce2" Name="InternalLink1" />
+        <InternalLink RefPartnerSideA="5232e941-5315-4ca5-b8a5-d63209f2b634" RefPartnerSideB="8e9aaf78-9aa3-4f0f-a21f-5396c926e41a" Name="InternalLink2" />
+        <InternalLink RefPartnerSideA="5232e941-5315-4ca5-b8a5-d63209f2b634" RefPartnerSideB="f0e2cc30-bb54-4c3c-8490-3f2ca093f2f5" Name="InternalLink3" />
+        <InternalLink RefPartnerSideA="5232e941-5315-4ca5-b8a5-d63209f2b634" RefPartnerSideB="32cdfe19-426f-43ab-a9e9-a92a58a35218" Name="InternalLink4" />
+        <InternalLink RefPartnerSideA="5232e941-5315-4ca5-b8a5-d63209f2b634" RefPartnerSideB="1dd7f9a3-7d81-4e5b-9f75-742f801a2c1e" Name="InternalLink5" />
+        <InternalLink RefPartnerSideA="5232e941-5315-4ca5-b8a5-d63209f2b634" RefPartnerSideB="24eca074-203e-402b-9eab-2bc4bb36b4a8" Name="InternalLink6" />
+        <InternalLink RefPartnerSideA="5232e941-5315-4ca5-b8a5-d63209f2b634" RefPartnerSideB="17b90778-b7e8-4cfd-b925-649523aa9c9a" Name="InternalLink7" />
+        <InternalLink RefPartnerSideA="5232e941-5315-4ca5-b8a5-d63209f2b634" RefPartnerSideB="ce7d42b0-f053-49e5-a3da-5f12d447d25f" Name="InternalLink8" />
+        <InternalLink RefPartnerSideA="5232e941-5315-4ca5-b8a5-d63209f2b634" RefPartnerSideB="b880183b-180d-4043-b3af-c2579cbe0176" Name="InternalLink9" />
+        <InternalLink RefPartnerSideA="5232e941-5315-4ca5-b8a5-d63209f2b634" RefPartnerSideB="7b6253b9-3481-4166-a1dd-4391c022ef08" Name="InternalLink10" />
+        <InternalLink RefPartnerSideA="5232e941-5315-4ca5-b8a5-d63209f2b634" RefPartnerSideB="5957149d-5b24-4a0a-8340-92eb2b139961" Name="InternalLink11" />
+        <InternalLink RefPartnerSideA="89219ed4-6116-42f5-b5c2-d23b10ed3779" RefPartnerSideB="87ffd48e-0880-4427-b6ee-6acc546ecffb" Name="InternalLink55" />
+        <InternalLink RefPartnerSideA="39fe6fa0-7c5d-4cbb-a907-1ee1f052131d" RefPartnerSideB="e7b5be13-abe7-44eb-a105-ca10b0047e05" Name="InternalLink56" />
+        <InternalLink RefPartnerSideA="a5c9a016-d673-41de-93f3-a5a4e5446e7c" RefPartnerSideB="61e7472c-058d-4b53-a1f1-456a4a444243" Name="InternalLink57" />
+        <InternalLink RefPartnerSideA="81696158-64fc-4c6e-bfed-4f34462693ac" RefPartnerSideB="5273a085-d861-4059-a2d2-4ddd926985ef" Name="InternalLink58" />
+        <InternalLink RefPartnerSideA="5232e941-5315-4ca5-b8a5-d63209f2b634" RefPartnerSideB="0a6febcc-5744-4928-a1e9-b18cda8ad927" Name="InternalLink59" />
+        <InternalLink RefPartnerSideA="218fafbf-5e70-4cc2-ae99-ae2a3a312d72" RefPartnerSideB="77da5405-e9bb-4165-8597-572c010c4490" Name="InternalLink60" />
+        <InternalLink RefPartnerSideA="218fafbf-5e70-4cc2-ae99-ae2a3a312d72" RefPartnerSideB="a482c230-9e9c-45d4-bbc6-c083f71423ab" Name="InternalLink61" />
+        <InternalLink RefPartnerSideA="218fafbf-5e70-4cc2-ae99-ae2a3a312d72" RefPartnerSideB="f4d906b9-8fca-4eca-b1da-5812702f7e3b" Name="InternalLink62" />
+        <InternalLink RefPartnerSideA="218fafbf-5e70-4cc2-ae99-ae2a3a312d72" RefPartnerSideB="e307db96-9275-432e-9e5f-1729b5bf0ea6" Name="InternalLink63" />
+        <InternalLink RefPartnerSideA="218fafbf-5e70-4cc2-ae99-ae2a3a312d72" RefPartnerSideB="bbdff3f2-dcc4-416a-9c16-478e3fa6ec32" Name="InternalLink64" />
+        <InternalLink RefPartnerSideA="5232e941-5315-4ca5-b8a5-d63209f2b634" RefPartnerSideB="80e26b03-c391-40fc-ae64-24f86e0f18e4" Name="InternalLink65" />
+        <InternalLink RefPartnerSideA="5232e941-5315-4ca5-b8a5-d63209f2b634" RefPartnerSideB="630c2147-2cde-4536-9a17-26d17b461035" Name="InternalLink66" />
+        <InternalLink RefPartnerSideA="218fafbf-5e70-4cc2-ae99-ae2a3a312d72" RefPartnerSideB="4ce9949b-47ee-4393-9960-2a127564f7c8" Name="InternalLink67" />
+        <InternalLink RefPartnerSideA="5232e941-5315-4ca5-b8a5-d63209f2b634" RefPartnerSideB="a5578678-294f-4eac-bdcf-a37aab0346f4" Name="InternalLink68" />
+        <InternalLink RefPartnerSideA="218fafbf-5e70-4cc2-ae99-ae2a3a312d72" RefPartnerSideB="5d80ef7e-8646-47ec-a9c2-a1fc49244262" Name="InternalLink69" />
+        <InternalLink RefPartnerSideA="218fafbf-5e70-4cc2-ae99-ae2a3a312d72" RefPartnerSideB="2ec0e150-3526-4a95-b766-575284b582d0" Name="InternalLink70" />
+        <InternalLink RefPartnerSideA="218fafbf-5e70-4cc2-ae99-ae2a3a312d72" RefPartnerSideB="a884ff2e-b089-489e-8a47-c26d78537cdd" Name="InternalLink71" />
+        <InternalLink RefPartnerSideA="218fafbf-5e70-4cc2-ae99-ae2a3a312d72" RefPartnerSideB="37759410-be64-4503-b370-7d6bf04420ee" Name="InternalLink72" />
+        <InternalLink RefPartnerSideA="218fafbf-5e70-4cc2-ae99-ae2a3a312d72" RefPartnerSideB="b046fbf3-49f8-4200-ab93-a71a7da61659" Name="InternalLink73" />
+        <InternalLink RefPartnerSideA="218fafbf-5e70-4cc2-ae99-ae2a3a312d72" RefPartnerSideB="a0649402-26b0-4e07-b49e-8038ea9fe261" Name="InternalLink74" />
+        <InternalLink RefPartnerSideA="218fafbf-5e70-4cc2-ae99-ae2a3a312d72" RefPartnerSideB="a19f614b-520f-4af5-9ffe-e60c6c19f06b" Name="InternalLink75" />
+        <InternalLink RefPartnerSideA="218fafbf-5e70-4cc2-ae99-ae2a3a312d72" RefPartnerSideB="3714882e-dd88-4733-857b-2dab6b497312" Name="InternalLink76" />
+        <InternalLink RefPartnerSideA="5232e941-5315-4ca5-b8a5-d63209f2b634" RefPartnerSideB="0dcb7a12-d06e-42cb-ab31-351a5981ecb2" Name="InternalLink77" />
+        <InternalLink RefPartnerSideA="5232e941-5315-4ca5-b8a5-d63209f2b634" RefPartnerSideB="750f8854-caef-4e50-8feb-d6a0fb795db7" Name="InternalLink78" />
+        <InternalLink RefPartnerSideA="5232e941-5315-4ca5-b8a5-d63209f2b634" RefPartnerSideB="264fadf4-31c3-4388-b63c-e0c49491f63f" Name="InternalLink79" />
+        <InternalLink RefPartnerSideA="5232e941-5315-4ca5-b8a5-d63209f2b634" RefPartnerSideB="80151c50-7cda-4480-9018-9a0962cca6dc" Name="InternalLink80" />
+        <InternalLink RefPartnerSideA="5232e941-5315-4ca5-b8a5-d63209f2b634" RefPartnerSideB="e4538edf-5eb2-4d5b-8239-35793617a8ac" Name="InternalLink81" />
+        <InternalLink RefPartnerSideA="5232e941-5315-4ca5-b8a5-d63209f2b634" RefPartnerSideB="9b573f4c-6cc0-4762-ac04-1aeb4d33b535" Name="InternalLink82" />
+        <InternalLink RefPartnerSideA="5232e941-5315-4ca5-b8a5-d63209f2b634" RefPartnerSideB="392f21bd-981c-4915-a255-0176fdb24bf8" Name="InternalLink83" />
+        <InternalLink RefPartnerSideA="5232e941-5315-4ca5-b8a5-d63209f2b634" RefPartnerSideB="f0dfa8c9-7612-4e49-9424-44d234783de2" Name="InternalLink84" />
+        <InternalLink RefPartnerSideA="5232e941-5315-4ca5-b8a5-d63209f2b634" RefPartnerSideB="7798b9ab-08fb-45bf-8a65-d9bdf78a2534" Name="InternalLink85" />
+        <InternalLink RefPartnerSideA="5232e941-5315-4ca5-b8a5-d63209f2b634" RefPartnerSideB="7c161875-6c1b-4360-9787-2411224b1c27" Name="InternalLink86" />
+        <InternalLink RefPartnerSideA="5232e941-5315-4ca5-b8a5-d63209f2b634" RefPartnerSideB="a63e23c5-aa1e-4013-ac0b-95706e17942b" Name="InternalLink87" />
+      </InternalElement>
+      <InternalElement Name="State Model" ID="d9ca6e21-72ff-42a0-8bb5-aa5dd0a028d4">
+        <InternalElement Name="EmergencyCheck" ID="5905a1eb-9af8-4620-b6aa-791139474fc9">
+          <ExternalInterface Name="Call_OUT" ID="9d9bad62-17d6-436a-a02a-23fd56756f9b" />
+          <ExternalInterface Name="Call_IN" ID="05cb6c2c-29a4-4cd5-9b83-49f540a06de7" />
+          <RoleRequirements RefBaseRoleClassPath="StateModel/State" />
+        </InternalElement>
+        <InternalElement Name="Stop" ID="eef7f1c8-12fd-4c1e-85b5-69fc9b2dc523" RefBaseSystemUnitPath="PackML/Stopped">
+          <Attribute Name="Activation" AttributeDataType="xs:boolean" />
+          <ExternalInterface Name="indicatesStateChange_IN" ID="f1a8d1ac-3cb1-4cf2-a7bc-b8403209e81f" />
+          <ExternalInterface Name="Call_IN" ID="0b0b32b0-1439-4777-9860-0e433b2e8d57" />
+          <ExternalInterface Name="Call_OUT" ID="d262a0ef-87cf-4c4e-bd6c-af243f40594d" />
+          <ExternalInterface Name="indicatesHWstate_OUT" ID="150b27ed-4865-4d89-8acb-59c56418c619" />
+          <RoleRequirements RefBaseRoleClassPath="StateModel/State" />
+        </InternalElement>
+        <InternalElement Name="Resetting" ID="d24b936b-7a27-4a0f-8a79-3a6a9d321f83" RefBaseSystemUnitPath="PackML/Resetting">
+          <Attribute Name="Activation" AttributeDataType="xs:boolean" />
+          <ExternalInterface Name="Call_IN" ID="78b57aac-6c19-47d6-82e3-6a5bdb4fbf22" />
+          <ExternalInterface Name="Call_OUT" ID="71586840-990f-484c-9dc8-1add6147f61b" />
+          <ExternalInterface Name="indicatesHWstate_OUT" ID="c14dfe53-6f5b-4474-95c1-0e1df5c13a92" />
+          <ExternalInterface Name="indicatesStateChange_IN" ID="db5fce32-3545-49ca-83bb-e4c3b3fe81be" />
+          <RoleRequirements RefBaseRoleClassPath="StateModel/State" />
+        </InternalElement>
+        <InternalElement Name="Idle" ID="7ad07f3a-03de-4e21-82bb-1a0c820505c3" RefBaseSystemUnitPath="PackML/Idle">
+          <Attribute Name="Activation" AttributeDataType="xs:boolean" />
+          <ExternalInterface Name="indicatesStateChange_IN" ID="e42ac167-bb8b-44cb-888e-290c0d98a35e" />
+          <ExternalInterface Name="Call_IN" ID="2821558a-3edc-4785-9574-55c4f27088d0" />
+          <ExternalInterface Name="Call_OUT" ID="06e0d8b9-645e-49d9-bb22-119a2ae2a93d" />
+          <RoleRequirements RefBaseRoleClassPath="StateModel/State" />
+        </InternalElement>
+        <InternalElement Name="Starting" ID="a155a3b4-6186-49a5-80b7-6fce2978a4fd">
+          <ExternalInterface Name="Call_IN" ID="68b34025-7b7c-417b-bf82-a26f8c051126" />
+          <ExternalInterface Name="Call_OUT" ID="397d8be0-b6bf-4469-a7bd-81fb454ab4b6" />
+          <RoleRequirements RefBaseRoleClassPath="StateModel/State" />
+        </InternalElement>
+        <InternalElement Name="Execute" ID="d0844d7a-81eb-4f01-b840-66f2aa0b5fe1" RefBaseSystemUnitPath="PackML/Execute">
+          <Attribute Name="Activation" AttributeDataType="xs:boolean" />
+          <ExternalInterface Name="Call_IN" ID="a6d4e4c8-637d-4112-8e8b-4445731041be" />
+          <ExternalInterface Name="indicatesHWstate_OUT" ID="0a04154d-adc4-4193-a639-e1cbc2225a76" />
+          <RoleRequirements RefBaseRoleClassPath="StateModel/State" />
+        </InternalElement>
+        <InternalLink RefPartnerSideA="d262a0ef-87cf-4c4e-bd6c-af243f40594d" RefPartnerSideB="05cb6c2c-29a4-4cd5-9b83-49f540a06de7" Name="Link" />
+        <InternalLink RefPartnerSideA="9d9bad62-17d6-436a-a02a-23fd56756f9b" RefPartnerSideB="0b0b32b0-1439-4777-9860-0e433b2e8d57" Name="InternalLink" />
+        <InternalLink RefPartnerSideA="397d8be0-b6bf-4469-a7bd-81fb454ab4b6" RefPartnerSideB="a6d4e4c8-637d-4112-8e8b-4445731041be" Name="InternalLink1" />
+        <InternalLink RefPartnerSideA="06e0d8b9-645e-49d9-bb22-119a2ae2a93d" RefPartnerSideB="68b34025-7b7c-417b-bf82-a26f8c051126" Name="InternalLink2" />
+        <InternalLink RefPartnerSideA="71586840-990f-484c-9dc8-1add6147f61b" RefPartnerSideB="2821558a-3edc-4785-9574-55c4f27088d0" Name="InternalLink3" />
+        <InternalLink RefPartnerSideA="d262a0ef-87cf-4c4e-bd6c-af243f40594d" RefPartnerSideB="78b57aac-6c19-47d6-82e3-6a5bdb4fbf22" Name="InternalLink4" />
+      </InternalElement>
+      <InternalElement Name="Conveyed Good" ID="1f0981c6-e9bb-45ed-9191-910b93a8d6d6">
+        <InternalElement Name="Static Product Properties" ID="ad4918ad-a2a0-4f16-8a54-87570d9a236e" RefBaseSystemUnitPath="Product Properties/Static Product Properties">
+          <InternalElement Name="BarCode" ID="a05b2cc9-71a7-4e3b-919a-68b601db0494">
+            <Attribute Name="Code" AttributeDataType="xs:string" />
+            <ExternalInterface Name="indicatesProductProperties_IN" ID="eb8d4d60-2d7f-4aad-8323-6ec7504d7593" />
+            <RoleRequirements RefBaseRoleClassPath="ProductProperties/StaticProductProperties" />
+          </InternalElement>
+          <InternalElement Name="Dimension" ID="4c2f3d50-8619-4023-b351-dc92a7b65456">
+            <Attribute Name="Width" AttributeDataType="xs:string" />
+            <Attribute Name="Height" AttributeDataType="xs:string" />
+            <Attribute Name="Length" AttributeDataType="xs:string" />
+            <RoleRequirements RefBaseRoleClassPath="ProductProperties/StaticProductProperties" />
+          </InternalElement>
+          <RoleRequirements RefBaseRoleClassPath="ProductProperties/StaticProductProperties" />
+        </InternalElement>
+        <InternalElement Name="Dynamic Properties" ID="471a747d-d73b-4606-95ab-12c46cc0fe11" RefBaseSystemUnitPath="Product Properties/Dynamic Properties">
+          <InternalElement Name="Position" ID="930e9ffb-79d5-43fc-80e0-0d5605737c17" RefBaseSystemUnitPath="Product Properties/Dynamic Properties/Position">
+            <Attribute Name="Position" AttributeDataType="xs:string">
+              <Description>on Module</Description>
+            </Attribute>
+            <RoleRequirements RefBaseRoleClassPath="ProductProperties/DynamicProductProperties" />
+          </InternalElement>
+          <RoleRequirements RefBaseRoleClassPath="ProductProperties/DynamicProductProperties" />
+        </InternalElement>
+        <RoleRequirements RefBaseRoleClassPath="" />
+        <RoleRequirements RefBaseRoleClassPath="" />
+      </InternalElement>
+      <InternalLink RefPartnerSideA="f8f50d50-4591-4cdf-a4c6-97cc53d33269" RefPartnerSideB="f1a8d1ac-3cb1-4cf2-a7bc-b8403209e81f" Name="InternalLink2" />
+      <InternalLink RefPartnerSideA="27e84325-0450-459a-bcaa-5be6c21fa5e4" RefPartnerSideB="f1a8d1ac-3cb1-4cf2-a7bc-b8403209e81f" Name="InternalLink3" />
+      <InternalLink RefPartnerSideA="697cc204-2432-482c-ad63-5d3c1895cfd6" RefPartnerSideB="f1a8d1ac-3cb1-4cf2-a7bc-b8403209e81f" Name="InternalLink4" />
+      <InternalLink RefPartnerSideA="d32c74c1-9162-4241-ba55-0c6b767520f1" RefPartnerSideB="f1a8d1ac-3cb1-4cf2-a7bc-b8403209e81f" Name="InternalLink5" />
+      <InternalLink RefPartnerSideA="150b27ed-4865-4d89-8acb-59c56418c619" RefPartnerSideB="f77463eb-9429-4497-810d-0e8211973da0" Name="InternalLink6" />
+      <InternalLink RefPartnerSideA="150b27ed-4865-4d89-8acb-59c56418c619" RefPartnerSideB="7da7c3b3-b305-482f-968b-e6d5fa970761" Name="InternalLink7" />
+      <InternalLink RefPartnerSideA="150b27ed-4865-4d89-8acb-59c56418c619" RefPartnerSideB="48f14916-fc46-431e-ad95-ca34fd6d8c7f" Name="InternalLink8" />
+      <InternalLink RefPartnerSideA="150b27ed-4865-4d89-8acb-59c56418c619" RefPartnerSideB="4bba82cd-3f67-43d4-8b0f-a5bc576da705" Name="InternalLink9" />
+      <InternalLink RefPartnerSideA="150b27ed-4865-4d89-8acb-59c56418c619" RefPartnerSideB="d28becbf-f79e-4c96-aebe-1477578c83d4" Name="InternalLink10" />
+      <InternalLink RefPartnerSideA="150b27ed-4865-4d89-8acb-59c56418c619" RefPartnerSideB="fc23524a-ffe6-47bc-9d53-7f8d2582e54a" Name="InternalLink11" />
+      <InternalLink RefPartnerSideA="150b27ed-4865-4d89-8acb-59c56418c619" RefPartnerSideB="f7d2bb87-d1db-49f7-89e8-b5f434f49ff0" Name="InternalLink12" />
+      <InternalLink RefPartnerSideA="150b27ed-4865-4d89-8acb-59c56418c619" RefPartnerSideB="0aa0d768-c0e4-41a6-abb9-fc3bc6dc918d" Name="InternalLink13" />
+      <InternalLink RefPartnerSideA="150b27ed-4865-4d89-8acb-59c56418c619" RefPartnerSideB="7f882883-0426-49a9-a323-b29eaf4622fd" Name="InternalLink14" />
+      <InternalLink RefPartnerSideA="150b27ed-4865-4d89-8acb-59c56418c619" RefPartnerSideB="6c6b396c-87b0-4dc6-953e-6c08a40e758c" Name="InternalLink15" />
+      <InternalLink RefPartnerSideA="150b27ed-4865-4d89-8acb-59c56418c619" RefPartnerSideB="052ab74c-8e88-49a4-97ba-88d91b02f909" Name="InternalLink16" />
+      <InternalLink RefPartnerSideA="150b27ed-4865-4d89-8acb-59c56418c619" RefPartnerSideB="0ebc1b71-8395-4f80-8811-b874fe8e0bab" Name="InternalLink17" />
+      <InternalLink RefPartnerSideA="150b27ed-4865-4d89-8acb-59c56418c619" RefPartnerSideB="724b3412-87d1-4269-ba19-8499d290bd9e" Name="InternalLink18" />
+      <InternalLink RefPartnerSideA="150b27ed-4865-4d89-8acb-59c56418c619" RefPartnerSideB="e5936a0e-4a80-4975-ac01-4d30124a1ffb" Name="InternalLink19" />
+      <InternalLink RefPartnerSideA="150b27ed-4865-4d89-8acb-59c56418c619" RefPartnerSideB="dea521d7-7426-49a7-a07e-fed1c844605e" Name="InternalLink20" />
+      <InternalLink RefPartnerSideA="150b27ed-4865-4d89-8acb-59c56418c619" RefPartnerSideB="aeb47966-4288-4df5-b3d0-b4d15be7e4d0" Name="InternalLink21" />
+      <InternalLink RefPartnerSideA="150b27ed-4865-4d89-8acb-59c56418c619" RefPartnerSideB="4dea9a5e-6d4e-43c2-9bbe-16c8d2406683" Name="InternalLink22" />
+      <InternalLink RefPartnerSideA="150b27ed-4865-4d89-8acb-59c56418c619" RefPartnerSideB="060b0b4a-9216-49be-bc65-9804194d2eb7" Name="InternalLink23" />
+      <InternalLink RefPartnerSideA="150b27ed-4865-4d89-8acb-59c56418c619" RefPartnerSideB="575ac4cb-d7ba-408f-9048-5a644ec537cd" Name="InternalLink24" />
+      <InternalLink RefPartnerSideA="150b27ed-4865-4d89-8acb-59c56418c619" RefPartnerSideB="5106032f-03c0-4abb-afc2-c94e4645b009" Name="InternalLink25" />
+      <InternalLink RefPartnerSideA="150b27ed-4865-4d89-8acb-59c56418c619" RefPartnerSideB="ed248c0a-8e6f-4b02-8797-7d50375b8b24" Name="InternalLink26" />
+      <InternalLink RefPartnerSideA="150b27ed-4865-4d89-8acb-59c56418c619" RefPartnerSideB="1cb88634-cd5d-4ca2-ad31-1d80cf36978d" Name="InternalLink27" />
+      <InternalLink RefPartnerSideA="150b27ed-4865-4d89-8acb-59c56418c619" RefPartnerSideB="dc7361c0-e0f9-4d55-92fa-09630f6158f0" Name="InternalLink28" />
+      <InternalLink RefPartnerSideA="150b27ed-4865-4d89-8acb-59c56418c619" RefPartnerSideB="12fbd2ca-d1f5-4c04-a318-2aa3bd76d9b7" Name="InternalLink29" />
+      <InternalLink RefPartnerSideA="150b27ed-4865-4d89-8acb-59c56418c619" RefPartnerSideB="b59be3ec-2374-4d80-85f2-edb15b05eb65" Name="InternalLink30" />
+      <InternalLink RefPartnerSideA="150b27ed-4865-4d89-8acb-59c56418c619" RefPartnerSideB="d3956a06-8395-4c27-bf68-8b41c190acf1" Name="InternalLink31" />
+      <InternalLink RefPartnerSideA="150b27ed-4865-4d89-8acb-59c56418c619" RefPartnerSideB="c9ff3b50-78bb-4858-9381-5555087e63a5" Name="InternalLink32" />
+      <InternalLink RefPartnerSideA="150b27ed-4865-4d89-8acb-59c56418c619" RefPartnerSideB="befa6245-d88c-42ed-9875-f010dae2806d" Name="InternalLink33" />
+      <InternalLink RefPartnerSideA="150b27ed-4865-4d89-8acb-59c56418c619" RefPartnerSideB="2ee5a1b6-889d-42f2-a07b-b999fdeed387" Name="InternalLink34" />
+      <InternalLink RefPartnerSideA="150b27ed-4865-4d89-8acb-59c56418c619" RefPartnerSideB="7fcab0ce-bdf1-4873-91cf-32e87a04ce14" Name="InternalLink35" />
+      <InternalLink RefPartnerSideA="150b27ed-4865-4d89-8acb-59c56418c619" RefPartnerSideB="24bcf76e-4df7-4a12-b04d-a96875325443" Name="InternalLink36" />
+      <InternalLink RefPartnerSideA="150b27ed-4865-4d89-8acb-59c56418c619" RefPartnerSideB="7aa3a0a5-bb55-40f3-8593-71d4a84b81fe" Name="InternalLink37" />
+      <InternalLink RefPartnerSideA="150b27ed-4865-4d89-8acb-59c56418c619" RefPartnerSideB="6cdf4e98-b565-4e5c-9701-72d4b2d67df2" Name="InternalLink38" />
+      <InternalLink RefPartnerSideA="150b27ed-4865-4d89-8acb-59c56418c619" RefPartnerSideB="fe3abfb0-091e-4db6-a232-58ef520a87c6" Name="InternalLink39" />
+      <InternalLink RefPartnerSideA="150b27ed-4865-4d89-8acb-59c56418c619" RefPartnerSideB="ee12dc3c-66b9-4870-a011-74ee5720b7ac" Name="InternalLink40" />
+      <InternalLink RefPartnerSideA="150b27ed-4865-4d89-8acb-59c56418c619" RefPartnerSideB="713ae816-655b-400c-b5af-c06910ba629e" Name="InternalLink41" />
+      <InternalLink RefPartnerSideA="c14dfe53-6f5b-4474-95c1-0e1df5c13a92" RefPartnerSideB="713ae816-655b-400c-b5af-c06910ba629e" Name="InternalLink42" />
+      <InternalLink RefPartnerSideA="c14dfe53-6f5b-4474-95c1-0e1df5c13a92" RefPartnerSideB="c314bc0f-71cd-48c9-9147-0a2a207434ec" Name="InternalLink43" />
+      <InternalLink RefPartnerSideA="d4af9d5e-7a9f-4e14-b21d-333e3e39b2ac" RefPartnerSideB="db5fce32-3545-49ca-83bb-e4c3b3fe81be" Name="Link" />
+      <InternalLink RefPartnerSideA="8d65c301-2c50-47de-a799-52c15d6f3edc" RefPartnerSideB="db5fce32-3545-49ca-83bb-e4c3b3fe81be" Name="InternalLink" />
+      <InternalLink RefPartnerSideA="c3de30c8-e22d-4c07-96ea-026d4de2105c" RefPartnerSideB="eb8d4d60-2d7f-4aad-8323-6ec7504d7593" Name="Link1" />
+      <InternalLink RefPartnerSideA="150b27ed-4865-4d89-8acb-59c56418c619" RefPartnerSideB="de57cd40-55a3-4bef-bc6b-0b3319ecdff7" Name="Link2" />
+      <InternalLink RefPartnerSideA="150b27ed-4865-4d89-8acb-59c56418c619" RefPartnerSideB="420bfa64-5a80-4b52-b1fb-6230ab688e34" Name="InternalLink44" />
+      <InternalLink RefPartnerSideA="150b27ed-4865-4d89-8acb-59c56418c619" RefPartnerSideB="d37c7283-55a5-42cb-8e4d-292cfdb622c7" Name="InternalLink45" />
+      <InternalLink RefPartnerSideA="150b27ed-4865-4d89-8acb-59c56418c619" RefPartnerSideB="f2f21e73-b89f-4512-a4eb-8fe81e8e2ad9" Name="InternalLink46" />
+      <InternalLink RefPartnerSideA="150b27ed-4865-4d89-8acb-59c56418c619" RefPartnerSideB="3e7e3910-cee9-4483-ba86-39d66925a5e2" Name="InternalLink47" />
+      <InternalLink RefPartnerSideA="150b27ed-4865-4d89-8acb-59c56418c619" RefPartnerSideB="536ba383-688e-45b8-9cfd-50f59af94a57" Name="InternalLink48" />
+      <InternalLink RefPartnerSideA="0a04154d-adc4-4193-a639-e1cbc2225a76" RefPartnerSideB="ee12dc3c-66b9-4870-a011-74ee5720b7ac" Name="InternalLink49" />
+      <InternalLink RefPartnerSideA="0a04154d-adc4-4193-a639-e1cbc2225a76" RefPartnerSideB="fe3abfb0-091e-4db6-a232-58ef520a87c6" Name="InternalLink50" />
+      <InternalLink RefPartnerSideA="0a04154d-adc4-4193-a639-e1cbc2225a76" RefPartnerSideB="6cdf4e98-b565-4e5c-9701-72d4b2d67df2" Name="InternalLink51" />
+      <InternalLink RefPartnerSideA="0a04154d-adc4-4193-a639-e1cbc2225a76" RefPartnerSideB="7aa3a0a5-bb55-40f3-8593-71d4a84b81fe" Name="InternalLink52" />
+      <InternalLink RefPartnerSideA="0a04154d-adc4-4193-a639-e1cbc2225a76" RefPartnerSideB="24bcf76e-4df7-4a12-b04d-a96875325443" Name="InternalLink53" />
+      <InternalLink RefPartnerSideA="0a04154d-adc4-4193-a639-e1cbc2225a76" RefPartnerSideB="7fcab0ce-bdf1-4873-91cf-32e87a04ce14" Name="InternalLink54" />
+      <InternalLink RefPartnerSideA="0a04154d-adc4-4193-a639-e1cbc2225a76" RefPartnerSideB="2ee5a1b6-889d-42f2-a07b-b999fdeed387" Name="InternalLink55" />
+      <InternalLink RefPartnerSideA="0a04154d-adc4-4193-a639-e1cbc2225a76" RefPartnerSideB="befa6245-d88c-42ed-9875-f010dae2806d" Name="InternalLink56" />
+      <InternalLink RefPartnerSideA="0a04154d-adc4-4193-a639-e1cbc2225a76" RefPartnerSideB="420bfa64-5a80-4b52-b1fb-6230ab688e34" Name="InternalLink57" />
+      <InternalLink RefPartnerSideA="0a04154d-adc4-4193-a639-e1cbc2225a76" RefPartnerSideB="c9ff3b50-78bb-4858-9381-5555087e63a5" Name="InternalLink58" />
+      <InternalLink RefPartnerSideA="0a04154d-adc4-4193-a639-e1cbc2225a76" RefPartnerSideB="d3956a06-8395-4c27-bf68-8b41c190acf1" Name="InternalLink59" />
+      <InternalLink RefPartnerSideA="0a04154d-adc4-4193-a639-e1cbc2225a76" RefPartnerSideB="b59be3ec-2374-4d80-85f2-edb15b05eb65" Name="InternalLink60" />
+      <InternalLink RefPartnerSideA="0a04154d-adc4-4193-a639-e1cbc2225a76" RefPartnerSideB="12fbd2ca-d1f5-4c04-a318-2aa3bd76d9b7" Name="InternalLink61" />
+      <InternalLink RefPartnerSideA="0a04154d-adc4-4193-a639-e1cbc2225a76" RefPartnerSideB="f2f21e73-b89f-4512-a4eb-8fe81e8e2ad9" Name="InternalLink62" />
+      <InternalLink RefPartnerSideA="0a04154d-adc4-4193-a639-e1cbc2225a76" RefPartnerSideB="dc7361c0-e0f9-4d55-92fa-09630f6158f0" Name="InternalLink63" />
+      <InternalLink RefPartnerSideA="0a04154d-adc4-4193-a639-e1cbc2225a76" RefPartnerSideB="1cb88634-cd5d-4ca2-ad31-1d80cf36978d" Name="InternalLink64" />
+      <InternalLink RefPartnerSideA="0a04154d-adc4-4193-a639-e1cbc2225a76" RefPartnerSideB="ed248c0a-8e6f-4b02-8797-7d50375b8b24" Name="InternalLink65" />
+      <InternalLink RefPartnerSideA="0a04154d-adc4-4193-a639-e1cbc2225a76" RefPartnerSideB="5106032f-03c0-4abb-afc2-c94e4645b009" Name="InternalLink66" />
+      <InternalLink RefPartnerSideA="0a04154d-adc4-4193-a639-e1cbc2225a76" RefPartnerSideB="575ac4cb-d7ba-408f-9048-5a644ec537cd" Name="InternalLink67" />
+      <InternalLink RefPartnerSideA="0a04154d-adc4-4193-a639-e1cbc2225a76" RefPartnerSideB="3e7e3910-cee9-4483-ba86-39d66925a5e2" Name="InternalLink68" />
+      <InternalLink RefPartnerSideA="0a04154d-adc4-4193-a639-e1cbc2225a76" RefPartnerSideB="060b0b4a-9216-49be-bc65-9804194d2eb7" Name="InternalLink69" />
+      <InternalLink RefPartnerSideA="0a04154d-adc4-4193-a639-e1cbc2225a76" RefPartnerSideB="4dea9a5e-6d4e-43c2-9bbe-16c8d2406683" Name="InternalLink70" />
+      <InternalLink RefPartnerSideA="0a04154d-adc4-4193-a639-e1cbc2225a76" RefPartnerSideB="aeb47966-4288-4df5-b3d0-b4d15be7e4d0" Name="InternalLink71" />
+      <InternalLink RefPartnerSideA="0a04154d-adc4-4193-a639-e1cbc2225a76" RefPartnerSideB="de57cd40-55a3-4bef-bc6b-0b3319ecdff7" Name="InternalLink72" />
+      <InternalLink RefPartnerSideA="0a04154d-adc4-4193-a639-e1cbc2225a76" RefPartnerSideB="dea521d7-7426-49a7-a07e-fed1c844605e" Name="InternalLink73" />
+      <InternalLink RefPartnerSideA="0a04154d-adc4-4193-a639-e1cbc2225a76" RefPartnerSideB="e5936a0e-4a80-4975-ac01-4d30124a1ffb" Name="InternalLink74" />
+      <InternalLink RefPartnerSideA="0a04154d-adc4-4193-a639-e1cbc2225a76" RefPartnerSideB="724b3412-87d1-4269-ba19-8499d290bd9e" Name="InternalLink75" />
+      <InternalLink RefPartnerSideA="0a04154d-adc4-4193-a639-e1cbc2225a76" RefPartnerSideB="0ebc1b71-8395-4f80-8811-b874fe8e0bab" Name="InternalLink76" />
+      <InternalLink RefPartnerSideA="0a04154d-adc4-4193-a639-e1cbc2225a76" RefPartnerSideB="052ab74c-8e88-49a4-97ba-88d91b02f909" Name="InternalLink77" />
+      <InternalLink RefPartnerSideA="0a04154d-adc4-4193-a639-e1cbc2225a76" RefPartnerSideB="6c6b396c-87b0-4dc6-953e-6c08a40e758c" Name="InternalLink78" />
+      <InternalLink RefPartnerSideA="0a04154d-adc4-4193-a639-e1cbc2225a76" RefPartnerSideB="7f882883-0426-49a9-a323-b29eaf4622fd" Name="InternalLink79" />
+      <InternalLink RefPartnerSideA="0a04154d-adc4-4193-a639-e1cbc2225a76" RefPartnerSideB="0aa0d768-c0e4-41a6-abb9-fc3bc6dc918d" Name="InternalLink80" />
+      <InternalLink RefPartnerSideA="0a04154d-adc4-4193-a639-e1cbc2225a76" RefPartnerSideB="f7d2bb87-d1db-49f7-89e8-b5f434f49ff0" Name="InternalLink81" />
+      <InternalLink RefPartnerSideA="0a04154d-adc4-4193-a639-e1cbc2225a76" RefPartnerSideB="fc23524a-ffe6-47bc-9d53-7f8d2582e54a" Name="InternalLink82" />
+      <InternalLink RefPartnerSideA="0a04154d-adc4-4193-a639-e1cbc2225a76" RefPartnerSideB="d28becbf-f79e-4c96-aebe-1477578c83d4" Name="InternalLink83" />
+      <InternalLink RefPartnerSideA="0a04154d-adc4-4193-a639-e1cbc2225a76" RefPartnerSideB="4bba82cd-3f67-43d4-8b0f-a5bc576da705" Name="InternalLink84" />
+      <InternalLink RefPartnerSideA="0a04154d-adc4-4193-a639-e1cbc2225a76" RefPartnerSideB="48f14916-fc46-431e-ad95-ca34fd6d8c7f" Name="InternalLink85" />
+      <InternalLink RefPartnerSideA="0a04154d-adc4-4193-a639-e1cbc2225a76" RefPartnerSideB="7da7c3b3-b305-482f-968b-e6d5fa970761" Name="InternalLink86" />
+      <InternalLink RefPartnerSideA="0a04154d-adc4-4193-a639-e1cbc2225a76" RefPartnerSideB="f77463eb-9429-4497-810d-0e8211973da0" Name="InternalLink87" />
+      <InternalLink RefPartnerSideA="0a04154d-adc4-4193-a639-e1cbc2225a76" RefPartnerSideB="d37c7283-55a5-42cb-8e4d-292cfdb622c7" Name="InternalLink88" />
+      <InternalLink RefPartnerSideA="0a04154d-adc4-4193-a639-e1cbc2225a76" RefPartnerSideB="536ba383-688e-45b8-9cfd-50f59af94a57" Name="InternalLink89" />
+      <RoleRequirements RefBaseRoleClassPath="Technical Resource/ProcessCell" />
+    </InternalElement>
+  </InstanceHierarchy>
+  <InterfaceClassLib Name="AutomationMLInterfaceClassLib">
+    <Description>Standard Automation Markup Language Interface Class Library</Description>
+    <Version>2.10.0</Version>
+    <InterfaceClass Name="AutomationMLBaseInterface">
+      <InterfaceClass Name="Order" RefBaseClassPath="AutomationMLBaseInterface">
+        <Attribute Name="Direction" AttributeDataType="xs:string" RefAttributeType="AutomationMLBaseAttributeTypeLib/Direction" />
+      </InterfaceClass>
+      <InterfaceClass Name="Port" RefBaseClassPath="AutomationMLBaseInterface">
+        <Attribute Name="Direction" AttributeDataType="xs:string" RefAttributeType="AutomationMLBaseAttributeTypeLib/Direction">
+          <Constraint Name="AllowedValues">
+            <NominalScaledType>
+              <RequiredValue>In</RequiredValue>
+              <RequiredValue>Out</RequiredValue>
+              <RequiredValue>InOut</RequiredValue>
+            </NominalScaledType>
+          </Constraint>
+        </Attribute>
+        <Attribute Name="Cardinality" RefAttributeType="AutomationMLBaseAttributeTypeLib/Cardinality">
+          <Attribute Name="MinOccur" AttributeDataType="xs:unsignedInt" />
+          <Attribute Name="MaxOccur" AttributeDataType="xs:unsignedInt" />
+        </Attribute>
+        <Attribute Name="Category" AttributeDataType="xs:string" RefAttributeType="AutomationMLBaseAttributeTypeLib/Category" />
+      </InterfaceClass>
+      <InterfaceClass Name="PPRConnector" RefBaseClassPath="AutomationMLBaseInterface" />
+      <InterfaceClass Name="ExternalDataConnector" RefBaseClassPath="AutomationMLBaseInterface">
+        <Attribute Name="refURI" AttributeDataType="xs:anyURI" RefAttributeType="AutomationMLBaseAttributeTypeLib/refURI" />
+        <InterfaceClass Name="COLLADAInterface" RefBaseClassPath="ExternalDataConnector" />
+        <InterfaceClass Name="PLCopenXMLInterface" RefBaseClassPath="ExternalDataConnector" />
+        <InterfaceClass Name="ExternalDataReference" RefBaseClassPath="ExternalDataConnector">
+          <Attribute Name="MIMEType" AttributeDataType="xs:string" RefAttributeType="AutomationMLBaseAttributeTypeLib/MIMEType" />
+        </InterfaceClass>
+      </InterfaceClass>
+      <InterfaceClass Name="Communication" RefBaseClassPath="AutomationMLBaseInterface">
+        <InterfaceClass Name="SignalInterface" RefBaseClassPath="Communication" />
+      </InterfaceClass>
+    </InterfaceClass>
+  </InterfaceClassLib>
+  <InterfaceClassLib Name="Relation">
+    <Version>0</Version>
+    <Revision>
+      <RevisionDate>2023-02-20T18:20:22.9653816+01:00</RevisionDate>
+      <AuthorName></AuthorName>
+    </Revision>
+    <InterfaceClass Name="HierarchyRelation">
+      <InterfaceClass Name="ParentOf" />
+      <InterfaceClass Name="ChildOf" />
+    </InterfaceClass>
+    <InterfaceClass Name="StateRelation">
+      <ExternalInterface Name="indicatesStateChange_OUT" ID="74c131e3-2551-472d-8250-83194e0a9a76" />
+      <ExternalInterface Name="indicatesStateChange_IN" ID="c466036e-6a44-48a4-8c5d-88eb8e783c5e" />
+    </InterfaceClass>
+    <InterfaceClass Name="FlowRelation">
+      <InterfaceClass Name="ProductFlow">
+        <InterfaceClass Name="ProductFlowRelation">
+          <ExternalInterface Name="Product_OUT" ID="5e2e5d8c-f3be-46f8-8239-b31dce5a6f43" />
+          <ExternalInterface Name="Product_IN" ID="5ba7b4bf-7dc0-41ff-9e40-63fdbd655d00" />
+        </InterfaceClass>
+        <InterfaceClass Name="ProductProperty">
+          <ExternalInterface Name="indicatesProductProperties_IN" ID="f135453e-c453-4b46-a871-250f7fe24f74" />
+          <ExternalInterface Name="indicatesProductProperties_OUT" ID="4db80aed-8d2c-4ccc-a662-e63fc2044d2d" />
+        </InterfaceClass>
+      </InterfaceClass>
+      <InterfaceClass Name="EnergyFlowRelation">
+        <InterfaceClass Name="ElectricityFlow">
+          <ExternalInterface Name="Electricity_OUT" ID="481c59bb-b402-4aaf-a988-7678fda62d6a" />
+          <ExternalInterface Name="Electricity_IN" ID="fb6e8b7a-94f6-4bab-87fd-c20bf60afb67" />
+        </InterfaceClass>
+        <InterfaceClass Name="HeatFlow">
+          <ExternalInterface Name="Heat_IN" ID="c49ed3a3-2814-47ff-a228-39daf14617f3" />
+          <ExternalInterface Name="Heat_OUT" ID="7af15657-3b56-4d5c-b831-adffa25824e5" />
+        </InterfaceClass>
+        <InterfaceClass Name="PneumaticFlow">
+          <ExternalInterface Name="Pneumatic_IN" ID="21a440a8-2703-4b48-8b29-ff804003c36c" />
+          <ExternalInterface Name="Pneumatic_OUT" ID="c6b996c4-4b6f-42b5-9a83-9472982a6717" />
+        </InterfaceClass>
+        <InterfaceClass Name="ForceFlow">
+          <ExternalInterface Name="ForceFlow_IN" ID="aa4572d6-7ca2-4999-809c-8bdbeae61d7f" />
+          <ExternalInterface Name="ForceFlow_OUT" ID="b2e291df-9204-46bf-a243-aeb32c3f969f" />
+        </InterfaceClass>
+      </InterfaceClass>
+      <InterfaceClass Name="InformationFlowRelation">
+        <InterfaceClass Name="WiredInfoFlow">
+          <ExternalInterface Name="WiredInfo_IN" ID="3efdacec-b0be-4034-b9bd-bbeae77523db" />
+          <ExternalInterface Name="WiredInfo_OUT" ID="1e66cd0d-78ed-4078-b9ca-0da39993e925" />
+        </InterfaceClass>
+        <InterfaceClass Name="WirelessInfoFlow">
+          <ExternalInterface Name="WirelessInfo_IN" ID="6aa2aeb0-2703-40be-8c6c-338d85ce5d0d" />
+          <ExternalInterface Name="WirelessInfo_OUT" ID="891c5607-a78b-4928-b330-4583d721408d" />
+        </InterfaceClass>
+        <InterfaceClass Name="SWInfoFlow">
+          <ExternalInterface Name="SWInfo_IN" ID="359aaa61-46dc-4557-b55a-f2111dafac08" />
+          <ExternalInterface Name="SWInfo_OUT" ID="d340397e-74ba-41a3-b7c8-c7aba20a0317" />
+        </InterfaceClass>
+      </InterfaceClass>
+    </InterfaceClass>
+    <InterfaceClass Name="SWHWRelation">
+      <InterfaceClass Name="HardwareState">
+        <ExternalInterface Name="indicatesHWstate_IN" ID="bd941187-90bb-427b-a49a-0cafcf0238ac" />
+        <ExternalInterface Name="indicatesHWstate_OUT" ID="fd061b79-94a3-45d4-9e8b-8f8b49464583" />
+      </InterfaceClass>
+      <InterfaceClass Name="SensorChange">
+        <ExternalInterface Name="getsSensorChange_IN" ID="23ba08e2-bd00-455e-a02f-bdf02437473f" />
+        <ExternalInterface Name="getsSensorChange_OUT" ID="90174958-c223-4d53-829f-b004f9e36b5e" />
+      </InterfaceClass>
+    </InterfaceClass>
+  </InterfaceClassLib>
+  <RoleClassLib Name="AutomationMLBaseRoleClassLib">
+    <Description>Automation Markup Language base role class library</Description>
+    <Version>2.10.0</Version>
+    <RoleClass Name="AutomationMLBaseRole">
+      <RoleClass Name="Group" RefBaseClassPath="AutomationMLBaseRole">
+        <Attribute Name="AssociatedFacet" AttributeDataType="xs:string" RefAttributeType="AutomationMLBaseAttributeTypeLib/AssociatedFacet" />
+      </RoleClass>
+      <RoleClass Name="Facet" RefBaseClassPath="AutomationMLBaseRole" />
+      <RoleClass Name="Resource" RefBaseClassPath="AutomationMLBaseRole" />
+      <RoleClass Name="Product" RefBaseClassPath="AutomationMLBaseRole" />
+      <RoleClass Name="Process" RefBaseClassPath="AutomationMLBaseRole" />
+      <RoleClass Name="Structure" RefBaseClassPath="AutomationMLBaseRole">
+        <RoleClass Name="ProductStructure" RefBaseClassPath="Structure" />
+        <RoleClass Name="ProcessStructure" RefBaseClassPath="Structure" />
+        <RoleClass Name="ResourceStructure" RefBaseClassPath="Structure" />
+      </RoleClass>
+      <RoleClass Name="ExternalData" RefBaseClassPath="AutomationMLBaseRole" />
+    </RoleClass>
+  </RoleClassLib>
+  <RoleClassLib Name="Technical Resource">
+    <Version>0</Version>
+    <RoleClass Name="ProcessCell" />
+    <RoleClass Name="Unit" />
+    <RoleClass Name="Equipment Module" />
+    <RoleClass Name="Control Module" />
+  </RoleClassLib>
+  <RoleClassLib Name="Software">
+    <Version>0</Version>
+    <RoleClass Name="SCADA" />
+    <RoleClass Name="PLCSoftwareProject">
+      <RoleClass Name="ErrorHandling">
+        <RoleClass Name="ErrorGeneration" />
+        <RoleClass Name="ErrorMessageGeneration" />
+        <RoleClass Name="ErrorProcessing" />
+        <RoleClass Name="ErrorMessageStoring" />
+        <RoleClass Name="ErrorMessageExport" />
+        <RoleClass Name="ReactionChoice" />
+        <RoleClass Name="ReactionExecution" />
+      </RoleClass>
+      <RoleClass Name="ProjectStructure">
+        <RoleClass Name="POU">
+          <Attribute Name="Attribute" AttributeDataType="xs:string">
+            <Value>VariableDeclaration</Value>
+          </Attribute>
+          <Attribute Name="Attribute1" AttributeDataType="xs:string">
+            <Value>Instruction</Value>
+          </Attribute>
+          <RoleClass Name="PRG" />
+          <RoleClass Name="FB" />
+          <RoleClass Name="FC" />
+          <RoleClass Name="LocalVariable" />
+          <RoleClass Name="GVL">
+            <RoleClass Name="GlobalVariable" />
+          </RoleClass>
+        </RoleClass>
+      </RoleClass>
+    </RoleClass>
+  </RoleClassLib>
+  <RoleClassLib Name="ElectricalComponents">
+    <Version>0</Version>
+  </RoleClassLib>
+  <RoleClassLib Name="KnowledgeMedia">
+    <Version>0</Version>
+    <RoleClass Name="ASDocumentation">
+      <RoleClass Name="Layoutplan" />
+      <RoleClass Name="CAD" />
+      <RoleClass Name="Simulation" />
+      <RoleClass Name="ItemIdentification" />
+      <RoleClass Name="WiringDiagrams">
+        <RoleClass Name="CommNWDiagrams" />
+        <RoleClass Name="ElectricalWDiagrams" />
+      </RoleClass>
+    </RoleClass>
+    <RoleClass Name="ASData">
+      <RoleClass Name="LogFiles">
+        <RoleClass Name="AlarmLogs">
+          <RoleClass Name="ActT" />
+          <RoleClass Name="DeactT" />
+          <RoleClass Name="ID" />
+          <RoleClass Name="Provider" />
+          <RoleClass Name="Message" />
+          <RoleClass Name="ItemDes" />
+        </RoleClass>
+        <RoleClass Name="UserinteractionLogs" />
+      </RoleClass>
+    </RoleClass>
+    <RoleClass Name="ASInterface">
+      <RoleClass Name="HumanProcessComm">
+        <RoleClass Name="HMI" />
+      </RoleClass>
+    </RoleClass>
+  </RoleClassLib>
+  <RoleClassLib Name="StateModel">
+    <Version>0</Version>
+    <RoleClass Name="State" />
+    <RoleClass Name="Mode">
+      <RoleClass Name="ProducingMode" />
+      <RoleClass Name="MaintenanceMode" />
+      <RoleClass Name="ManualMode" />
+      <RoleClass Name="RampUpMode" />
+      <RoleClass Name="ShutDownMode" />
+    </RoleClass>
+  </RoleClassLib>
+  <RoleClassLib Name="ProductProperties">
+    <Version>0</Version>
+    <RoleClass Name="StaticProductProperties" />
+    <RoleClass Name="DynamicProductProperties">
+      <RoleClass Name="MachineSettingProperties" />
+      <RoleClass Name="ProcessingProperties" />
+    </RoleClass>
+  </RoleClassLib>
+  <SystemUnitClassLib Name="SystemUnitClassLib">
+    <Version>0</Version>
+    <SystemUnitClass Name="Row" ID="fdafa569-d8af-4a0a-908d-c36ae380a4e0">
+      <SystemUnitClass Name="Roll Module" ID="41f513ae-cd57-475d-b92f-f26bdaf93418">
+        <SystemUnitClass Name="SEG" ID="5e9c74f2-00d6-44e7-87b5-038a6e1c7f5d" />
+        <SystemUnitClass Name="LSU" ID="d54b5fe8-1c23-4eaf-86df-4dcb1874ed27" />
+        <SystemUnitClass Name="Stopper" ID="f49883a5-d344-4f01-b166-6e4376294f40" />
+      </SystemUnitClass>
+      <SystemUnitClass Name="Transposer" ID="c0e86557-af90-4919-8249-096763230070">
+        <SystemUnitClass Name="UMS" ID="b9e3aee8-5100-4a80-be98-db9819a2221d" />
+        <SystemUnitClass Name="LSU" ID="672687a6-9e4b-4d12-815d-e24fe5b3c573" />
+        <SystemUnitClass Name="LSH" ID="450cbb8f-8aa5-4066-9005-746416190fd5" />
+        <SystemUnitClass Name="Stopper" ID="d8c39134-689e-4801-8a27-74835922d50d" />
+      </SystemUnitClass>
+    </SystemUnitClass>
+    <SystemUnitClass Name="Curve" ID="f3dad8fc-f8ba-44c9-b6fa-a2a48cfb9fa4">
+      <SystemUnitClass Name="Round Module" ID="2655c043-cd77-406c-944b-87110acdbb9a">
+        <SystemUnitClass Name="SEG" ID="e6bffe67-b2ef-4707-bbe5-c4b23282d78f" />
+        <SystemUnitClass Name="LSH" ID="8e186ac4-def2-4964-a9e6-91335478db4d" />
+        <SystemUnitClass Name="Stopper" ID="fcc3d7dd-398e-4eb8-9c69-c124a90c0e54" />
+      </SystemUnitClass>
+    </SystemUnitClass>
+    <SystemUnitClass Name="Scanner" ID="4c34646a-2a5a-41ff-9cea-b7556752807a" />
+    <SystemUnitClass Name="Drive Device" ID="46e06c5d-11b6-41fa-9fb4-2892a841a6c0" />
+    <SystemUnitClass Name="Pneumatic Device" ID="04df9d5d-3536-4fac-a423-f4260f4ee80c" />
+    <SystemUnitClass Name="HMI" ID="c453f2ab-bd3a-4307-aede-f0baa92d2e21">
+      <SystemUnitClass Name="Switch" ID="340f0ef5-fff8-414d-b7a2-ce6529c036c6">
+        <SystemUnitClass Name="SCH" ID="6c17c03e-d44e-4e08-be91-4efb18082632" />
+      </SystemUnitClass>
+      <SystemUnitClass Name="Acknowledgement" ID="a6a75061-fd45-4f13-bce8-4d72c47069c5">
+        <SystemUnitClass Name="SCH_03" ID="3cd65641-cb96-4da7-838f-e541371b3777" />
+      </SystemUnitClass>
+      <SystemUnitClass Name="On" ID="4ae17cf6-6cad-441b-8c46-71c4d3f97fc1">
+        <SystemUnitClass Name="SCH_02" ID="6be8a269-497c-4459-aebe-0c19d93dee56" />
+      </SystemUnitClass>
+      <SystemUnitClass Name="Off" ID="24c0b5a7-2297-467f-a626-ae7650bf336e">
+        <SystemUnitClass Name="SCH_01" ID="78e7c2d7-a087-4480-9a0a-9da31f746d35" />
+      </SystemUnitClass>
+    </SystemUnitClass>
+    <SystemUnitClass Name="Lamps" ID="97eb6f83-f58f-42c5-a61d-f584a3ea0786">
+      <SystemUnitClass Name="LMP" ID="fa29c858-b8eb-45c9-8a2a-4539f7a8a7fe" />
+    </SystemUnitClass>
+    <SystemUnitClass Name="Emergeny stop" ID="ad7b4982-064f-45f5-a343-3b8d7ae96ecc">
+      <SystemUnitClass Name="NOT" ID="7428cac5-9d1d-4ab5-b41a-13bb9c70c09c" />
+    </SystemUnitClass>
+  </SystemUnitClassLib>
+  <SystemUnitClassLib Name="PackML">
+    <Version>0</Version>
+    <SystemUnitClass Name="Execute" ID="2b70473f-04e9-4fdc-a411-57fb30639a2c" />
+    <SystemUnitClass Name="Resetting" ID="578cd9ee-5c39-4f25-8a73-2fc498129a11" />
+    <SystemUnitClass Name="Idle" ID="461b03f2-dad1-464d-b6e2-dde7550d9667" />
+    <SystemUnitClass Name="Suspended" ID="e14b52db-0b30-4d40-bb76-f0a46aad0a41" />
+    <SystemUnitClass Name="Stopped" ID="d5d2c1b9-5c9c-47b1-a180-7c6c3efc0173" />
+  </SystemUnitClassLib>
+  <SystemUnitClassLib Name="Product Properties">
+    <Version>0</Version>
+    <SystemUnitClass Name="Static Product Properties" ID="60e5591d-80b4-4cd8-9bc3-a1a2bd248b49">
+      <SystemUnitClass Name="Identification" ID="fba55b4b-dbf0-4eb0-8f66-906398a88b2e">
+        <SystemUnitClass Name="Bar Code" ID="8f6b3e41-d0ab-44c2-b636-199bbd19ce43" />
+        <SystemUnitClass Name="QR Code" ID="5b18dad8-1252-4ca8-b09b-022d8d20347e" />
+      </SystemUnitClass>
+      <SystemUnitClass Name="Weight" ID="878e8ef5-ba6f-41c7-90d2-02e570b82b35" />
+      <SystemUnitClass Name="Dimension" ID="135eb2d4-bfd4-44b1-a644-fead5a8646b8" />
+    </SystemUnitClass>
+    <SystemUnitClass Name="Dynamic Properties" ID="38b0a728-05f0-4b58-8037-68e4d143df35">
+      <SystemUnitClass Name="Position" ID="4c34f635-d065-41ce-a675-ec91e6a29a83" />
+      <SystemUnitClass Name="Orientation" ID="0271adf5-730f-4725-b2d0-0169424ef3f1" />
+    </SystemUnitClass>
+  </SystemUnitClassLib>
+  <AttributeTypeLib Name="AutomationMLBaseAttributeTypeLib">
+    <Description>Standard Automation Markup Language Attribute Type Library</Description>
+    <Version>2.10.0</Version>
+    <AttributeType Name="Direction" AttributeDataType="xs:string">
+      <Constraint Name="AllowedValues">
+        <NominalScaledType>
+          <RequiredValue>In</RequiredValue>
+          <RequiredValue>Out</RequiredValue>
+          <RequiredValue>InOut</RequiredValue>
+        </NominalScaledType>
+      </Constraint>
+    </AttributeType>
+    <AttributeType Name="Cardinality">
+      <Attribute Name="MinOccur" AttributeDataType="xs:unsignedInt" />
+      <Attribute Name="MaxOccur" AttributeDataType="xs:unsignedInt" />
+    </AttributeType>
+    <AttributeType Name="Category" AttributeDataType="xs:string" />
+    <AttributeType Name="refURI" AttributeDataType="xs:anyURI" />
+    <AttributeType Name="AssociatedFacet" AttributeDataType="xs:string" />
+    <AttributeType Name="ListType" />
+    <AttributeType Name="OrderedListType" />
+    <AttributeType Name="LocalizedAttribute" AttributeDataType="xs:string" />
+    <AttributeType Name="AssociatedExternalValue">
+      <Attribute Name="refCAEXAttribute" />
+      <Attribute Name="refURI" RefAttributeType="AutomationMLBaseAttributeTypeLib/refURI" />
+      <Attribute Name="Direction" RefAttributeType="AutomationMLBaseAttributeTypeLib/Direction" />
+    </AttributeType>
+    <AttributeType Name="MIMEType" AttributeDataType="xs:string" />
+    <AttributeType Name="DocLang" AttributeDataType="xs:string" />
+  </AttributeTypeLib>
+  <AttributeTypeLib Name="ProductProp">
+    <Version>0</Version>
+    <AttributeType Name="StaticProductAttributes" AttributeDataType="xs:string">
+      <Attribute Name="Weight" AttributeDataType="xs:int" />
+      <Attribute Name="length" AttributeDataType="xs:int" />
+      <Attribute Name="width" AttributeDataType="xs:int" />
+      <Attribute Name="height" AttributeDataType="xs:int" />
+      <AttributeType Name="Identifikation" AttributeDataType="xs:string">
+        <Attribute Name="QR Code" AttributeDataType="xs:string" />
+        <Attribute Name="Bar Code" AttributeDataType="xs:string" />
+      </AttributeType>
+    </AttributeType>
+    <AttributeType Name="DynamicProductAttributes" AttributeDataType="xs:string">
+      <Attribute Name="Position" AttributeDataType="xs:string">
+        <Description>on Module</Description>
+      </Attribute>
+      <Attribute Name="Orientation" AttributeDataType="xs:boolean">
+        <Description>straight or rotated</Description>
+      </Attribute>
+    </AttributeType>
+  </AttributeTypeLib>
+  <AttributeTypeLib Name="State Properties">
+    <Version>0</Version>
+    <AttributeType Name="State" AttributeDataType="xs:string">
+      <Attribute Name="ActorState" AttributeDataType="xs:string" />
+      <Attribute Name="SensorState" AttributeDataType="xs:string" />
+      <Attribute Name="SwitchState" AttributeDataType="xs:string" />
+      <Attribute Name="Activation" AttributeDataType="xs:boolean">
+        <Description>Active/inactive
+</Description>
+      </Attribute>
+    </AttributeType>
+  </AttributeTypeLib>
+</CAEXFile>
